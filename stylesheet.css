@@ -1,0 +1,38 @@
+
+
+
+/*Nav Menu*/
+#navbarTop{
+    float: right;
+    margin-bottom: -55px;
+    background-color: transparent;
+    
+
+}
+
+/*Nav Text*/
+li a {
+    color:aliceblue;
+}
+
+/*Nav Hover*/
+li a:hover{
+   background-color: darkgrey;
+
+}
+
+/* Header background*/
+#backgroundTop {
+    width: 100%;
+    height:650px;
+    min-width: 500px;
+    max-width:2000px; 
+    background-size: cover;
+}
+#aboutUs{
+    padding-top: 6em;
+    text-align: center;
+}
+#whoWeAre{
+    font-family: monospace;
+}
