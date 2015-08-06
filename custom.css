@@ -1,0 +1,43 @@
+/* Navbar for Med. and Lg. Screens*/
+#navbarCollapse{
+    background-color: transparent;
+    width: 410;
+    margin: auto; 
+}
+/*Nav Text*/
+.navBtn {
+    color:whitesmoke;
+    font-weight: 575;
+    font-size: 1em;
+}
+
+/*Tobble bar color*/
+.icon-bar{
+    background-color: darkgray;
+}
+
+/*Jumbotron!*/
+.jumbotron{
+    background-image: url(images/RKVW9F72PL.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -75px;
+    z-index: -1;
+}
+/*About Us Section*/
+#aboutUs{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-family: monospace;
+    margin: 80px auto 50px auto;
+}
+
+#myCarousel{
+    height: auto;
+    margin-top: 30px;
+
+}

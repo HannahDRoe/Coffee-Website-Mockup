@@ -1,8 +1,9 @@
-<html><head lang="en">
+<html>
+    <head lang="en">
         <meta charset="UTF-8">
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        -->
+        
                 <!--BootStrap-->
                 <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -15,41 +16,98 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
         
-        <link href="stylesheet.css" type="text/css" rel="stylesheet">
+        <link href="custom.css" type="text/css" rel="stylesheet">
 
 
 
     </head>
     
     <body>
-        <header id="topHeader">
-            <!--Navigation-->
-            <nav class="navbar" id="navbarTop" role="navigation">
-                <div class="container-fluid">
-                    <div> 
-                         <ul id="navList col-lg-6 col-med-6 col-sm-4" class="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">Location</a></li>
-                        </ul>
-                    </div><!--conatiner for lsit-->
-                </div> <!--div Container-->
-            </nav>
-            <img id="backgroundTop" src="RKVW9F72PL.jpg"/>
-           
-        </header>
-        <article id="aboutUs">
-            <p id="whoWeAre">Our people are dedicated to great coffee. Who doesn't love to wake up and have a great esspresso? </p>
+         
+        <header id="top"> 
+         <div class="container-fluid">
+
+
+
+
+                <!--Navigation-->
+                <nav class="navbar" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button"  class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
+                            <span class="sr-only"> Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button> 
+                    </div> <!-- Toggle Button and nav list Div-->
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav collapse-xs dropdown">
+                                <li><a href="#top" class="navBtn" >Home</a></li>
+                                <li><a href="#aboutUs" class="navBtn">About Us</a></li>
+                                <li><a href="#" class="navBtn">Menu</a></li>
+                                <li><a href="#" class="navBtn">People</a></li>
+                            <li><a href="#" class="navBtn">Location</a></li>
+                            </ul>
+                    </div>
+                </nav><!--navbar-->
+
+
+
+
+            </div><!--container div 1-->
+
+                <!--Jumbotroooon!-->
+            <div class="jumbotron hidden-xs">    
+            </div>
+         
+         </header>
+        <div class="container">
+       
+                <article id="aboutUs">
+                    <h2>About Us</h2>
+                    <h5> Landjaeger tongue shank ham hock bacon shoulder ham tenderloin turkey ribeye salami meatball kevin bresaola drumstick.</h5>
+                    <br></br>
+                    <p> Bacon ipsum dolor amet cupim pork pork loin prosciutto. Landjaeger drumstick ground round cupim, biltong ball tip ham beef turkey chicken brisket alcatra andouille prosciutto  round cupim, biltong ball tip ham beef turkey chicken brisket alcatra andouille prosciutto pork. Tail ham ham hock leberkas, frankfurter prosciutto fatback hamburger kevin biltong t-bone pastrami. Kielbasa jerky cupim pork loin, meatloaf brisket hamburger tri-tip landjaeger tenderloin shankle filet mignon meatball sirloin. Meatloaf ball tip flank shankle chicken swine frankfurter drumstick shank. 
+                    </p>
+                
+                </article>
+        
+                <div id="myCarousel" class="caroursel slide" data-interval="5000" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!--Wrapper for carousel items-->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/Tom.jpg" alt="Tom"/>
+                        </div>
+                        <div class="item">
+                            <img src="images/sally.jpg" alt="Sally"/>
+                        </div>
+                        <div class="item">
+                            <img src="images/Juan.jpg" alt= "Juan"/>
+                        </div>
+                        
+                        <!-- carousel-controsl-->
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"> </span></a>
+                        
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-cheveron-right"></span> 
+                        </a>
+                        
+                    </div>
+                </div>
+                    
+                        
         
         
-        
-        </article>
+                </div>
     
-  
+        </div> <!--container div 2-->
         
-    
+   
         
     
 
@@ -76,4 +134,5 @@
     
 
 
-</body></html>
+</body>
+</html>
