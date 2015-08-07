@@ -1,3 +1,12 @@
+@media handheld and (max-width: 481px) and (orientation: portrait) {
+  html,body{width:100%;overflow:hidden;}
+}
+
+@media handheld and (max-width: 380px) and (orientation: portrait) {
+  html,body{width:100%;overflow:hidden;}
+}
+
+
 /* Navbar for Med. and Lg. Screens*/
 #navbarCollapse{
     background-color: transparent;
@@ -36,27 +45,13 @@
     margin: 80px auto 30px auto;
 }
 
-/*Carousel Body*/
 #myCarousel{
     position: relative;
-    height:500;
-    width: 100%;
-    min-height: 200px;
-    min-width: 400px;
-    margin: 100px auto 100px auto;
-    z-index: 100;
+    background-color: lightcoral;
+    height: auto;
 }
 .item{
-    height: 550px;
-}
-
-/*Carousel Controls*/
-.carousel-control{
-    background: none !important;
-    position: absolute;
-    padding: 200px 0 ;
-    color:#000;
-    font-size: 2em;
+ min-height: 300px;   
 }
 
 /*Carousel hover/focus colors*/
@@ -64,15 +59,16 @@
 .carousel-control:focus {
     color: #000000;
 }
-
-/*Carousel Indicators Position and colors*/
-.carousel-indicators {
-    position: inherit;
-  	text-align: center;
-  	list-style: none;
-    z-index: 12;
-    top: -150px;
+/*Carousel Controls*/
+.carousel-control{
+    background: none !important;
+    position: absolute;
+    top: auto;
+    bottom: 150;
+    color:#000;
+    font-size: 2em;
 }
+/*Carousel Indicators Position and colors*/
 .carousel-indicators li{
   	display: inline-block;
    	width: 10px;
@@ -82,52 +78,59 @@
    	border-radius: 50%;
    	border: 3px solid transparent;
    	box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+
 }
 .carousel-indicators .active {
-  	width: 10px;
-  	height: 10px;
   	background-color: #000000;
 }
 
-/*Download Menu Button*/
-#download{
-    display: block;
-    position: relative;
-    margin: -65px auto 0 auto;
-}
+
 
 /*Menu Background*/
 #coffeeWrapper{
-    position: absolute;
+    position: relative;
     background: url(images/coffeeSmiley.jpg)no-repeat center center;
-    height: 800px;
+    height: 750px;
     width: 100%;
-    margin: 60px auto 0 auto;
+    margin: 60px auto 85px auto;
     background-size: 100%;
-    z-index: 101;
+  
+    overflow: hidden;
+
 }
 
 /*Coffee bar blurb and download*/
 #menu{
-    position: relative;
-    margin: 275px auto 0 auto;
+   
+    position: absolute;
+    margin: 0 auto 0 auto;
     background: white;
-    opacity: .7;
+    opacity: .8;
     height: 50%;
     max-height: 250px;
     width: 100%;
+    top: 50%;
 }
 #menuText{
     width: 75%;
     margin: 0 auto 0 auto;
 }
+
+/*Download Menu Button*/
+#download{
+    position:relative;
+    opacity: 1.0 !important;
+    
+}
+/*Instagram!*/
 #instagram{
     position: relative;
-    top: 800px;
     height: 300px;
     width: 100%;
-    background-color: blue;
+    background-color: dimgray;
+    margin: 0 auto 0 auto;
+    
     
 
 
-} /*Instagram!*/
+} 
