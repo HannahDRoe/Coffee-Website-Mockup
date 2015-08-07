@@ -23,13 +23,9 @@
     </head>
     
     <body>
-         
         <header id="top"> 
+        
          <div class="container-fluid">
-
-
-
-
                 <!--Navigation-->
                 <nav class="navbar" role="navigation">
                     <div class="navbar-header">
@@ -44,42 +40,38 @@
                             <ul class="nav navbar-nav collapse-xs dropdown">
                                 <li><a href="#top" class="navBtn" >Home</a></li>
                                 <li><a href="#aboutUs" class="navBtn">About Us</a></li>
-                                <li><a href="#" class="navBtn">Menu</a></li>
-                                <li><a href="#" class="navBtn">People</a></li>
+                                <li><a href="#myCarousel" class="navBtn">People</a></li>
+                                <li><a href="#menu" class="navBtn">Menu</a></li>
                             <li><a href="#" class="navBtn">Location</a></li>
                             </ul>
                     </div>
                 </nav><!--navbar-->
 
+            </div><!--Navigation-->
 
-
-
-            </div><!--container div 1-->
-
-                <!--Jumbotroooon!-->
-            <div class="jumbotron hidden-xs">    
+                
+            <div class="jumbotron hidden-xs"></div><!--Jumbotroooon!-->
+            
+            <div id="logo">
             </div>
          
-         </header>
+         </header> 
         <div class="container">
        
-                <article id="aboutUs">
+                <section id="aboutUs" class="textBox">
                     <h2>About Us</h2>
-                    <h5> Landjaeger tongue shank ham hock bacon shoulder ham tenderloin turkey ribeye salami meatball kevin bresaola drumstick.</h5>
+                    <h5>  Single shot, black americano frappuccino that cup, medium, decaffeinated so, in, grounds a cream bar roast sit arabica dark strong redeye flavour grounds.</h5>
                     <br></br>
-                    <p> Bacon ipsum dolor amet cupim pork pork loin prosciutto. Landjaeger drumstick ground round cupim, biltong ball tip ham beef turkey chicken brisket alcatra andouille prosciutto  round cupim, biltong ball tip ham beef turkey chicken brisket alcatra andouille prosciutto pork. Tail ham ham hock leberkas, frankfurter prosciutto fatback hamburger kevin biltong t-bone pastrami. Kielbasa jerky cupim pork loin, meatloaf brisket hamburger tri-tip landjaeger tenderloin shankle filet mignon meatball sirloin. Meatloaf ball tip flank shankle chicken swine frankfurter drumstick shank. 
+                    <p>Irish, percolator espresso seasonal brewed beans spoon sugar at in latte a sugar, so shop caffeine a crema. Et, and barista qui iced crema irish, espresso, in, at sweet, dark, organic grounds wings cappuccino whipped iced single shot. Flavour sit whipped sit arabica percolator, cultivar foam, mazagran sweet, mug galão ut arabica and cup redeye robust fair trade. Cup as, whipped id saucer, as, body ut instant rich medium sweet steamed.
                     </p>
                 
-                </article>
-        
-                <div id="myCarousel" class="caroursel slide" data-interval="5000" data-ride="carousel">
-                    <!-- Carousel indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <!--Wrapper for carousel items-->
+                </section>
+        </div> <!--About Us-->
+    
+                <!--Carousel-->
+                <div id="myCarousel" class="carousel slide" data-interval="6000" data-ride="carousel">
+                    <h2 id="ourPeople" class="textBox">Our People</h2>
+                    
                     <div class="carousel-inner">
                         <div class="item active">
                             <img src="images/Tom.jpg" alt="Tom"/>
@@ -89,23 +81,47 @@
                         </div>
                         <div class="item">
                             <img src="images/Juan.jpg" alt= "Juan"/>
-                        </div>
+                        </div> <!-- /Carouselitems-->
+                    </div><!-- Carousel Wrapper-->
                         
-                        <!-- carousel-controsl-->
-                        <a class="carousel-control left" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"> </span></a>
                         
-                        <a class="carousel-control right" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-cheveron-right"></span> 
-                        </a>
-                        
-                    </div>
-                </div>
                     
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
                         
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                    <!-- carousel-controls-->
+                     
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                   
+                </div> <!-- Carousel and People Text -->
         
         
-                </div>
+        <div id="coffeeWrapper">
+            <section id="menu" class="textBox">
+                <div id="menuText">
+                    <h2> Our Coffee Bar</h2>
+                <h5>Arabica flavour plunger pot affogato black, brewed affogato breve, flavour cortado, medium qui affogato aroma, cortado saucer dripper trifecta mug aged caramelization.</h5></br>
+                <p>At macchiato robusta, percolator cortado, doppio, that ut arabica, flavour acerbic in sugar aromatic, cup shop iced decaffeinated bar lungo instant white frappuccino. Ut iced seasonal espresso spoon, irish, single shot qui barista medium, crema arabica doppio cream whipped ut filter. </p>
+                </div><!--Blurb about menu-->
+            </section><!--Menu-->
+                
+            <div class="col-lg-12 text-center"> 
+               <button id="download" class="btn btn-default" type="button">Download Menu
+                 <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>  
+                </button>
+            </div> <!--Download Button Positioning-->
+        </div><!--Coffee Wrapper-->
+
+        <div id="instagram"><!--Instagram API-->
+        </div>
+        <div id="location">
+        </div>
+        
     
-        </div> <!--container div 2-->
         
    
         
@@ -123,14 +139,11 @@
         
         
         
-        
-        
-    
-    
+   
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">                     </script>
         <!-- javaScript for Bootstrap-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">                       </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">                   </script>
     
 
 

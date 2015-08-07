@@ -18,26 +18,116 @@
 
 /*Jumbotron!*/
 .jumbotron{
-    background-image: url(images/RKVW9F72PL.jpg);
+    background-image:url(images/coffeeCloseUp.jpg);
     background-size: cover;
-    height: 500px;
+    height: 700px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: -75px;
-    z-index: -1;
 }
-/*About Us Section*/
-#aboutUs{
+
+/*TextFormatting*/
+.textBox{
     text-align: center;
     width: 100%;
     height: auto;
     font-family: monospace;
-    margin: 80px auto 50px auto;
+    margin: 80px auto 30px auto;
 }
 
+/*Carousel Body*/
 #myCarousel{
-    height: auto;
-    margin-top: 30px;
-
+    position: relative;
+    height:500;
+    width: 100%;
+    min-height: 200px;
+    min-width: 400px;
+    margin: 100px auto 100px auto;
+    z-index: 100;
 }
+.item{
+    height: 550px;
+}
+
+/*Carousel Controls*/
+.carousel-control{
+    background: none !important;
+    position: absolute;
+    padding: 200px 0 ;
+    color:#000;
+    font-size: 2em;
+}
+
+/*Carousel hover/focus colors*/
+.carousel-control:hover,
+.carousel-control:focus {
+    color: #000000;
+}
+
+/*Carousel Indicators Position and colors*/
+.carousel-indicators {
+    position: inherit;
+  	text-align: center;
+  	list-style: none;
+    z-index: 12;
+    top: -150px;
+}
+.carousel-indicators li{
+  	display: inline-block;
+   	width: 10px;
+   	height: 10px;
+   	margin: 0 2px;
+   	background: transparent;
+   	border-radius: 50%;
+   	border: 3px solid transparent;
+   	box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+}
+.carousel-indicators .active {
+  	width: 10px;
+  	height: 10px;
+  	background-color: #000000;
+}
+
+/*Download Menu Button*/
+#download{
+    display: block;
+    position: relative;
+    margin: -65px auto 0 auto;
+}
+
+/*Menu Background*/
+#coffeeWrapper{
+    position: absolute;
+    background: url(images/coffeeSmiley.jpg)no-repeat center center;
+    height: 800px;
+    width: 100%;
+    margin: 60px auto 0 auto;
+    background-size: 100%;
+    z-index: 101;
+}
+
+/*Coffee bar blurb and download*/
+#menu{
+    position: relative;
+    margin: 275px auto 0 auto;
+    background: white;
+    opacity: .7;
+    height: 50%;
+    max-height: 250px;
+    width: 100%;
+}
+#menuText{
+    width: 75%;
+    margin: 0 auto 0 auto;
+}
+#instagram{
+    position: relative;
+    top: 800px;
+    height: 300px;
+    width: 100%;
+    background-color: blue;
+    
+
+
+} /*Instagram!*/
