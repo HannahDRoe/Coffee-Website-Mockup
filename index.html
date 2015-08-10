@@ -27,8 +27,8 @@
         <header id="top"> 
         
          <div class="container-fluid">
-                <!--Navigation-->
-                <nav class="navbar" role="navigation">
+                <!--Navigation Collapse-->
+                <nav class="navbar visible-xs" role="navigation">
                     <div class="navbar-header">
                         <button type="button"  class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
                             <span class="sr-only"> Toggle Navigation</span>
@@ -47,7 +47,18 @@
                             <li><a href="#" class="navBtn">Location</a></li>
                             </ul>
                     </div><!--Nav List-->
-                </nav><!--navbar-->
+                </nav><!--navbarCollapse-->
+                <!--Navigation for med and lg views-->
+                <nav class="navbar hidden-xs" role="navigation">
+                
+                        <ul class="nav navbar-nav" id="navAcross">
+                            <li><a href="#top" class="navBtn" >Home</a></li>
+                            <li><a href="#aboutUs" class="navBtn">About Us</a></li>
+                            <li><a href="#ourPeople" class="navBtn">People</a></li>
+                            <li><a href="#menu" class="navBtn">Menu</a></li>
+                        <li><a href="#" class="navBtn">Location</a></li>
+                    </ul>
+                </nav>
 
             </div><!--Navigation-->
 
@@ -58,6 +69,9 @@
             </div>
          
          </header><!--Navigation-->
+        
+        
+        <!--About Us-->
         <div class="container">
        
                 <section id="aboutUs" class="textBox">
@@ -68,7 +82,7 @@
                     </p>
                 
                 </section>
-        </div> <!--About Us-->
+        </div> 
   
         <!--Carousel-->
         <div class="container main-container">
@@ -133,9 +147,9 @@
 
         </div><!-- Carousel container -->
 
-    
+        <!--Menu Jumbotron-->
         <div class="jumbotron" id="coffeeSmile">
-          <div class="container">
+          <div class="container" id="menu">
            <div id="menuText">
                 <h2> Our Coffee Bar</h2>
                 <h3>Arabica flavour plunger pot affogato black, brewed affogato breve, flavour cortado, medium qui affogato aroma, cortado saucer dripper trifecta mug aged caramelization.</h3></br>
@@ -147,7 +161,11 @@
                 </button>
                  </div> <!--Download Button Positioning-->
           </div>
-        </div>
+        </div><!--Menu and Coffee Blurb-->
+
+
+
+
 
         <div id="instagram"><!--Instagram API-->
         </div>
@@ -159,10 +177,8 @@
    
         
     
-
-
-    
-        
+    <!--BackToTop Button-->
+    <div id="backToTop"><a href="#top">Top</a></div>  
         
         
         

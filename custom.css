@@ -1,18 +1,28 @@
 
-
 /* Navbar for Med. and Lg. Screens*/
-#navbarCollapse{
+#navAcross{
+    position: fixed;
     background-color: transparent;
-    width: 410;
-    margin: auto; 
+    width: 422px;
+    left: 50%;
+    right: 50%;
+    margin: auto 0  auto -190px;
+    z-index: 99999;
+    
 }
+
 /*Nav Text*/
 .navBtn {
     color:whitesmoke;
     font-weight: 575;
-    font-size: 1em;
+    font-size: 1.2em;
 }
-
+.navBtn:hover {
+    background-color: none;
+    border-bottom: 5px;
+    border-color: orangered;
+    
+}
 /*Tobble bar color*/
 .icon-bar{
     background-color: darkgray;
@@ -41,8 +51,9 @@
 #myCarousel{
     position: relative;
     background-color: lightcoral;
-    height: auto;
+    height: 600px;
     width: 100%;
+    margin-bottom: 10px;
 }
 .item{
  min-height: 300px;   
@@ -78,7 +89,7 @@
   	background-color: #000000;
 }
 
-
+/*Menu Jumbotron*/
 #coffeeSmile {
     position: absolute;
     background-image:
@@ -91,10 +102,9 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    
+    margin-top: 60px;
 }
-
+/*Menu Text*/
 #menuText{
     position: relative;
     margin-top: 20%;
@@ -103,3 +113,17 @@
     text-align: center;
 }
 
+
+#backToTop{
+    position: fixed;
+    height: 80px;
+    width: 80px;
+    color: grey;
+    background-color: black;
+    z-index: 999999;
+    bottom: 400px;
+    right: 0px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: .6em;
+}
