@@ -1,27 +1,36 @@
 
+
+/*Collapsse Navbar styles*/
+#navbarCollapse{
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: lightgray;
+    
+    
+}
 /* Navbar for Med. and Lg. Screens*/
 #navAcross{
     position: fixed;
     background-color: transparent;
-    width: 422px;
+    width: 450px;
     left: 50%;
     right: 50%;
     margin: auto 0  auto -190px;
     z-index: 99999;
-    
 }
-
 /*Nav Text*/
-.navBtn {
+.navBtnTop {
     color:whitesmoke;
     font-weight: 575;
     font-size: 1.2em;
 }
-.navBtn:hover {
-    background-color: none;
-    border-bottom: 5px;
-    border-color: orangered;
-    
+.navBtnTop:hover {
+    background-color: transparent !important;
+    color: #0098A6;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-shadow: none;
+    border-bottom: 2px solid #EEAA69;
 }
 /*Tobble bar color*/
 .icon-bar{
@@ -69,7 +78,7 @@
     background: none !important;
     position: absolute;
     top: auto;
-    bottom: 150;
+    bottom: auto;
     color:#000;
     font-size: 2em;
 }
