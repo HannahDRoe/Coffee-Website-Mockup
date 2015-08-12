@@ -1,4 +1,6 @@
-
+body{
+    position: relative;
+}
 
 /*Collapsse Navbar styles*/
 #navbarCollapse{
@@ -23,6 +25,8 @@
     color:whitesmoke;
     font-weight: 575;
     font-size: 1.2em;
+    background-color: purple;
+
 }
 .navBtnTop:hover {
     background-color: transparent !important;
