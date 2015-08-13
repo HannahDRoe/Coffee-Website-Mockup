@@ -19,23 +19,36 @@ body{
     right: 50%;
     margin: auto 0  auto -190px;
     z-index: 99999;
+    text-shadow: none;
+    
 }
 /*Nav Text*/
 .navBtnTop {
-    color:whitesmoke;
-    font-weight: 575;
+    color: #DA8F18;
+    font-weight: 500;
     font-size: 1.2em;
-    background-color: purple;
-
+    text-shadow: none;
 }
-.navBtnTop:hover {
-    background-color: transparent !important;
-    color: #0098A6;
-    font-weight: 600;
+/*Nav Hover Effects */
+.navBtnTop:hover{
+    color: #DA8F18;
+    font-weight: 500;
     font-size: 1.2em;
     text-shadow: none;
     border-bottom: 2px solid #EEAA69;
+    background-color: transparent !important;
+  
 }
+/*Nav Active Effects*/
+.nav .active{
+    color: #DA8F18;
+    text-shadow: none;
+    border-bottom: 2px solid #EEAA69;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: transparent;
+}
+
 /*Tobble bar color*/
 .icon-bar{
     background-color: darkgray;
@@ -63,7 +76,7 @@ body{
 
 #myCarousel{
     position: relative;
-    background-color: lightcoral;
+    background-color:#916E46;
     height: 600px;
     width: 100%;
     margin-bottom: 10px;
@@ -124,6 +137,25 @@ body{
     color: white;
     font-weight: 700;
     text-align: center;
+}
+
+#instagram {
+    top: 960px;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #716660;
+    
+}
+#instagramInception{
+    position: relative;
+    align-content: center;
+    margin: 0 auto;
+    height: 75%;
+    width: 50%;
+    top: 13%;
+    background-color: #4F3938
 }
 
 

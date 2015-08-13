@@ -1,8 +1,11 @@
-<html>
-    <head lang="en">
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CoffeeShop</title>
                 <!--BootStrap-->
                 <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -18,17 +21,15 @@
         <link rel="stylesheet" type="text/css" href="custom.css">
         <link rel="stylesheet" type="text/css" href="animate.min.css">
         
-        
-
 
     </head>
     
-    <body data-spy="scroll" data-target=".scrollspy">
+    <body  data-spy="scroll" data-target=".scrollspy" data-offset="50">
         <header id="top"> 
         
-         <div class="container-fluid">
-                <!--Navigation Collapse-->
-                <nav class="navbar  visible-xs" role="navigation">
+            <div class="container">
+                 <!--Navigation Collapse-->
+               <nav class="navbar  visible-xs" role="navigation">
                     <div class="navbar-header">
                         <button type="button"  class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
                             <span class="sr-only"> Toggle Navigation</span>
@@ -47,21 +48,25 @@
                             <li><a href="#" class="navBtn">Location</a></li>
                             </ul>
                     </div><!--Nav List-->
-                </nav><!--navbarCollapse-->
-                <!--Navigation for med and lg views-->
-                 <div class="col-md-3">
-                    <nav class="navbar hidden-xs scrollspy" role="navigation" data-spy="affix-top">
-                            <ul class="nav navbar-nav" id="navAcross">
-                                <li><a href="#top" class="navBtnTop" >Home</a></li>
-                                <li><a href="#aboutUs" class="navBtnTop">About Us</a></li>
-                                <li><a href="#ourPeople" class="navBtnTop">People</a></li>
-                                <li><a href="#menu" class="navBtnTop">Menu</a></li>
-                            <li><a href="#" class="navBtnTop">Location</a></li>
-                        </ul>
+                </nav>
+            </div><!--navbarCollapse--> 
+            
+                <!--Navigation for med and lg views--> 
+               
+                    <nav class="navbar hidden-xs scrollspy" role="navigation" data-spy="affix-top">  
+                        <div class="container">
+                                <ul class="nav navbar-nav" id="navAcross">
+                                    <li><a href="#top" class="navBtnTop">Home</a></li>
+                                    <li><a href="#aboutUs" class="navBtnTop">About Us</a></li>
+                                    <li><a href="#ourPeople" class="navBtnTop">People</a></li>
+                                    <li><a href="#coffeeSmile" class="navBtnTop">Menu</a></li>
+                                    <li><a href="#" class="navBtnTop">Location</a></li>
+                                </ul>
+                        </div><!--Navigation-->
                     </nav>
-                </div>
+              
 
-            </div><!--Navigation-->
+        
 
                 
             <div class="jumbotron hidden-xs" id="topJumbo"></div><!--Jumbotroooon!-->
@@ -73,9 +78,9 @@
         
         
         <!--About Us-->
-        <div class="container">
+        <div class="container" id="aboutUs">
        
-                <section id="aboutUs" class="textBox">
+                <section class="textBox">
                     <h2>About Us</h2>
                     <h5>  Single shot, black americano frappuccino that cup, medium, decaffeinated so, in, grounds a cream bar roast sit arabica dark strong redeye flavour grounds.</h5>
                     <br></br>
@@ -86,8 +91,8 @@
         </div> 
   
         <!--Carousel-->
-        <div class="container main-container">
-            <h2 id="ourPeople" class="textBox col-med-12">Our People</h2>
+        <div class="container main-container" id="ourPeople">
+            <h2 class="textBox col-med-12">Our People</h2>
 
             <div id="myCarousel" class="carousel slide" data-pause="hover" data-interval="6000" >
               <!-- Indicators -->
@@ -150,7 +155,7 @@
 
         <!--Menu Jumbotron-->
         <div class="jumbotron" id="coffeeSmile">
-          <div class="container" id="menu">
+          <div class="container">
            <div id="menuText">
                 <h2> Our Coffee Bar</h2>
                 <h3>Arabica flavour plunger pot affogato black, brewed affogato breve, flavour cortado, medium qui affogato aroma, cortado saucer dripper trifecta mug aged caramelization.</h3></br>
@@ -167,8 +172,10 @@
 
 
 
-
-        <div id="instagram"><!--Instagram API-->
+        <!--Instagram API-->
+        <div id="instagram">
+            <div id="instagramInception">
+            </div>
         </div>
         <div id="location">
      </div>
@@ -184,9 +191,9 @@
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">                     </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- javaScript for Bootstrap-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">                   </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
 
 </body>
