@@ -7,13 +7,15 @@ body{
     font-size: 1.2em;
     font-weight: 600;
     background-color: lightgray;
-    
-    
 }
+/*Collapsse Toggle bar color*/
+.icon-bar{
+    background-color: darkgray;
+}
+
 /* Navbar for Med. and Lg. Screens*/
 #navAcross{
     position: fixed;
-    background-color: transparent;
     width: 450px;
     left: 50%;
     right: 50%;
@@ -27,7 +29,7 @@ body{
     color: #DA8F18;
     font-weight: 500;
     font-size: 1.2em;
-    text-shadow: none;
+    text-shadow: none !important;
 }
 /*Nav Hover Effects */
 .navBtnTop:hover{
@@ -46,13 +48,8 @@ body{
     border-bottom: 2px solid #EEAA69;
     font-weight: 400;
     font-size: 1em;
-    background-color: transparent;
 }
 
-/*Tobble bar color*/
-.icon-bar{
-    background-color: darkgray;
-}
 
 /*Jumbotron!*/
 #topJumbo{
@@ -74,6 +71,7 @@ body{
     margin: 80px auto 30px auto;
 }
 
+/*Carousel*/
 #myCarousel{
     position: relative;
     background-color:#916E46;
@@ -81,10 +79,10 @@ body{
     width: 100%;
     margin-bottom: 10px;
 }
+/*Carousel images*/
 .item{
  min-height: 300px;   
 }
-
 /*Carousel hover/focus colors*/
 .carousel-control:hover,
 .carousel-control:focus {
