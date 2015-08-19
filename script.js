@@ -13,3 +13,15 @@ $(document).ready(function(){
    });
     }
 });
+
+            
+var amountScrolled = 2500;
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() > amountScrolled) {
+        $("#backToTop").fadeIn('slow');
+    } else {
+        $("#backToTop").fadeOut('slow');
+    }
+});
+	
