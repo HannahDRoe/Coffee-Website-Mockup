@@ -61,7 +61,7 @@ body{
 }
 
 
-/*Jumbotron!*/
+/*Top Jumbotron!*/
 #topJumbo{
     background-image:url(images/coffeeCloseUp.jpg);
     background-size: cover;
@@ -69,8 +69,8 @@ body{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -75px;
 }
+
 
 /*TextFormatting*/
 .textBox{
@@ -88,26 +88,41 @@ body{
     background-color:#916E46;
     height: 600px;
     width: 100%;
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
 }
+
 /*Carousel images*/
 .item{
- min-height: 300px;   
+    width: 100%;
+    height: 100%;
 }
+#slideOne{
+    background-image: url(images/cafe.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
 /*Carousel hover/focus colors*/
 .carousel-control:hover,
 .carousel-control:focus {
-    color: #000000;
+    color: rgba(0, 0, 0, 0.5);
 }
 /*Carousel Controls*/
 .carousel-control{
     background: none !important;
-    position: absolute;
-    top: auto;
-    bottom: auto;
-    color:#000;
+    color:rgba(0, 0, 0, 0.71);
     font-size: 2em;
 }
+/*Carousel Controls position*/
+.glyphicon-menu-right,
+.glyphicon-menu-left{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    
+}
+
 /*Carousel Indicators Position and colors*/
 .carousel-indicators li{
   	display: inline-block;
@@ -117,11 +132,11 @@ body{
    	background: transparent;
    	border-radius: 50%;
    	border: 3px solid transparent;
-   	box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+   	box-shadow: rgba(0, 0, 0, 0.8) 0 0 2px;
 
 }
 .carousel-indicators .active {
-  	background-color: #000000;
+  	background-color: rgba(0, 0, 0, 0.78);
 }
 
 /*Menu Jumbotron*/
@@ -144,8 +159,8 @@ body{
     position: relative;
     margin-top: 20%;
     color: white;
-    font-weight: 700;
     text-align: center;
+    font-family: monospace;
 }
 
 #instagram {
