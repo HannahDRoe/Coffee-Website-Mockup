@@ -34,7 +34,7 @@ body{
 }
 /*Nav Text*/
 .navBtnTop {
-    color: #DA8F18;
+    color: #faf0e4;
     font-weight: 500;
     font-size: 1.2em;
     text-shadow: none !important;
@@ -43,23 +43,27 @@ body{
 }
 /*Nav Hover Effects */
 .navBtnTop:hover{
-    color: #DA8F18;
+    color: #fff2bb;
     font-weight: 500;
     font-size: 1.2em;
     text-shadow: none;
-    border-bottom: 2px solid #EEAA69;
+    border-bottom: 2px solid #fff2bb;
     background-color: transparent !important;
 }
 /*Nav Active Effects*/
 .nav .active{
-    color: #DA8F18;
+    color:#fff2bb;
     text-shadow: none;
-    border-bottom: 2px solid #EEAA69;
+    border-bottom: 2px solid #fff2bb;
     font-weight: 400;
     font-size: 1em;
    
 }
-
+#aboutUs {
+    margin-top: -50px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
 
 /*Top Jumbotron!*/
 #topJumbo{
@@ -108,6 +112,7 @@ body{
 .carousel-control:focus {
     color: rgba(0, 0, 0, 0.5);
 }
+
 /*Carousel Controls*/
 .carousel-control{
     background: none !important;
@@ -182,7 +187,7 @@ body{
     background-color: #4F3938
 }
 
-#location{
+#findUs{
     top: 960px;
     position: relative;
     height: 600px;
@@ -204,4 +209,5 @@ body{
     font-size: 30px;
     text-align: center;
     padding-top: .6em;
+    display: none;
 }
