@@ -2,36 +2,35 @@ body{
     position: relative;
 }
 
-/*Collapsse Navbar styles*/
-#navbarCollapse{
-    font-size: 1.2em;
-    font-weight: 600;
-    background-color: lightgray;
+#top{
+    float: none;
+    position: relative;
+    background-image:url(images/coffeeCloseUp.jpg);
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    z-index: 1;
+    
 }
+
+.navbar-fixed-top{
+    position: fixed;
+    width: 100%;
+    margin: 0 2px 0 -2px;
+    z-index: 9999;
+    text-shadow: none;
+}
+#navAcross{
+    position: relative;
+    margin-left: 350px;
+    
+}
+
 /*Collapsse Toggle bar color*/
 .icon-bar{
     background-color: darkgray;
 }
-.navbar{
-    float: none;
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-    border-radius: 0;
-    height: 6%;
-}
 
-/* Navbar for Med. and Lg. Screens*/
-#navAcross{
-    position: fixed;
-    width: 450px;
-    left: 50%;
-    right: 50%;
-    margin: auto 0  auto -225px;
-    z-index: 99999;
-    text-shadow: none;
-    
-}
 /*Nav Text*/
 .navBtnTop {
     color: #faf0e4;
@@ -39,6 +38,7 @@ body{
     font-size: 1.2em;
     text-shadow: none !important;
     text-align: center;
+    width: 100%;
 
 }
 /*Nav Hover Effects */
@@ -59,22 +59,21 @@ body{
     font-size: 1em;
    
 }
-#aboutUs {
-    margin-top: -50px;
-    padding-top: 50px;
-    padding-bottom: 80px;
+
+/* Div for Navbar color change*/
+#startChange {
+    position: relative;
+    height: 30px;
+    margin-top: -50;
 }
 
-/*Top Jumbotron!*/
-#topJumbo{
-    background-image:url(images/coffeeCloseUp.jpg);
-    background-size: cover;
-    height: 700px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
+#aboutUs{
+    position: relative;
+    height: 450px;
+    margin-top: 20px;
+    padding-top: 40px;
 
+}
 
 /*TextFormatting*/
 .textBox{
@@ -210,4 +209,16 @@ body{
     text-align: center;
     padding-top: .6em;
     display: none;
+}
+
+
+
+/*Navbar media query*/
+@media (min-width: 500px){
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
 }

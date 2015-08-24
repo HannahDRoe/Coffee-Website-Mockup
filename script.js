@@ -1,20 +1,21 @@
+
 $(document).ready(function(){       
-   var scroll_start =0;
-   var startchange = $('#aboutUs');
+   var scroll_start = 300;
+   var startchange = $('#startChange');
    var offset = startchange.offset();
     if (startchange.length){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar").css('background-color', 'rgba(107, 121, 136, 0.96)');
+          $(".navbar-fixed-top").css('background-color', 'rgba(99, 124, 150, 0.99)');
        } else {
-           $(".navbar").css('background-color', 'transparent');
+           $(".navbar-fixed-top").css('background-color', 'transparent');
        }
    });
     }
 });
 
-            
+// Back to top button 
 var amountScrolled = 2500;
 
 $(window).scroll(function(){
@@ -24,4 +25,4 @@ $(window).scroll(function(){
         $("#backToTop").fadeOut('slow');
     }
 });
-	
+

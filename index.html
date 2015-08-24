@@ -22,67 +22,53 @@
 
     </head>
     
-    <body  data-spy="scroll" data-target=".scrollspy" data-offset="50">
+    <body  data-spy="scroll" data-target=".scrollspy">
         
         <!--Navigation-->
         <header id="top"> 
         
-            <div class="container">
-                
+        
                  <!--Navigation Collapse-->
-               <nav class="navbar  visible-xs" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button"  class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
-                            <span class="sr-only"> Toggle Navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button> 
-                    </div> <!-- Toggle Button and nav list Div-->
-                    
-                    <div id="navbarCollapse" class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav collapse-xs dropdown">
-                                <li><a href="#top" class="navBtn" >Home</a></li>
-                                <li><a href="#aboutUs" class="navBtn">About Us</a></li>
-                                <li><a href="#ourPeople" class="navBtn">People</a></li>
-                                <li><a href="#menu" class="navBtn">Menu</a></li>
-                            <li><a href="#" class="navBtn">Location</a></li>
+               <nav class="navbar navbar-fixed-top scrollspy" role="navigation" >
+                   <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only"> Toggle Navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button> 
+                        </div> <!-- Toggle Button and nav list Div-->
+                   
+
+                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav" id="navAcross">
+                                <li class="active"><a href="#top" class="navBtnTop" >Home</a></li>
+                                <li><a href="#aboutUs" class="navBtnTop">About Us</a></li>
+                                <li><a href="#ourPeople" class="navBtnTop">People</a></li>
+                                <li><a href="#coffeeSmile" class="navBtnTop">Menu</a></li>
+                            <li><a href="#findUs" class="navBtnTop">Location</a></li>
                             </ul>
-                    </div><!--Nav List-->
+                        </div><!--Nav List-->
+                    </div>
                 </nav>
-            </div><!--navbarCollapse--> 
-            
-                <!--Navigation for med and lg views--> 
-               
-                    <nav class="navbar hidden-xs scrollspy" role="navigation" data-spy="affix-top">  
-                        <div class="container">
-                                <ul class="nav navbar-nav" id="navAcross">
-                                    <li><a href="#top" class="navBtnTop">Home</a></li>
-                                    <li><a href="#aboutUs" class="navBtnTop">About Us</a></li>
-                                    <li><a href="#ourPeople" class="navBtnTop">People</a></li>
-                                    <li><a href="#coffeeSmile" class="navBtnTop">Menu</a></li>
-                                    <li><a href="#findUs" class="navBtnTop">Find Us</a></li>
-                                </ul>
-                        </div><!--Navigation-->
-                    </nav>
-              
-            <!--Jumbotroooon!-->
-            <div class="jumbotron hidden-xs" id="topJumbo"></div>
-            
+
+   
             <div id="logo">
             </div>
          
          </header>
-        
+        <!--NavBar color change-->
+        <div id="startChange"></div>
         
         <!--About Us-->
-        <div class="container" id="aboutUs">
+        <div class="container-fluid" id="aboutUs">
             <div class="row">
                 <section class="textBox">
-                    <h2>About Us</h2>
-                    <p class="col-lg-6">  Mazagran java, french press, blue mountain, latte, instant single origin chicory, brewed at, plunger pot, breve acerbic aromatic ut redeye est, carajillo aged et id french press redeye. Cortado, black aftertaste cup caramelization, cappuccino, beans roast plunger pot shop caffeine a in con panna. White pumpkin spice, sit espresso affogato blue mountain barista foam arabica saucer mocha ut, medium so, cultivar black, froth extra, saucer irish mocha in macchiato spoon. Wings as brewed beans saucer, cortado cappuccino, beans pumpkin spice coffee froth strong fair trade roast. </p>
+                    <h2>About Us</h2></br>
+                    <p class="col-lg-3 col-lg-push-3">  Mazagran java, french press, blue mountain, latte, instant single origin chicory, brewed at, plunger pot, breve acerbic aromatic ut redeye est, carajillo aged et id french press redeye. Cortado, black aftertaste cup caramelization, cappuccino, beans roast plunger pot shop caffeine a in con panna. White pumpkin spice, sit espresso affogato blue mountain barista foam arabica saucer mocha ut, medium so, cultivar black, froth extra, saucer irish mocha in macchiato spoon. Wings as brewed beans saucer, cortado cappuccino, beans pumpkin spice coffee froth strong fair trade roast. </p>
                   
-                    <p class="col-lg-6">Irish, percolator espresso seasonal brewed beans spoon sugar at in latte a sugar, so shop caffeine a crema. Et, and barista qui iced crema irish, espresso, in, at sweet, dark, organic grounds wings cappuccino whipped iced single shot. Flavour sit whipped sit arabica percolator, cultivar foam, mazagran sweet, mug galão ut arabica and cup redeye robust fair trade. Cup as, whipped id saucer, as, body ut instant rich medium sweet steamed.
+                    <p class="col-lg-3 col-lg-offset-3">Irish, percolator espresso seasonal brewed beans spoon sugar at in latte a sugar, so shop caffeine a crema. Et, and barista qui iced crema irish, espresso, in, at sweet, dark, organic grounds wings cappuccino whipped iced single shot. Flavour sit whipped sit arabica percolator, cultivar foam, mazagran sweet, mug galão ut arabica and cup redeye robust fair trade. Cup as, whipped id saucer, as, body ut instant rich medium sweet steamed.
                     </p>
                 
                 </section>
