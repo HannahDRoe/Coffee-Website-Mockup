@@ -1,6 +1,7 @@
 body{
     position: relative;
     padding: 0px;
+    height: 100%;
 }
 
 #top{
@@ -25,6 +26,7 @@ body{
     position: relative;
     width: 450px;
     margin: 0 auto;
+    z-index: 9999;
 
 }
 /*Collapsse Toggle bar color*/
@@ -139,6 +141,7 @@ body{
    	border-radius: 50%;
    	border: 3px solid transparent;
    	box-shadow: rgba(0, 0, 0, 0.8) 0 0 2px;
+    z-index: 99;
 
 }
 .carousel-indicators .active {
