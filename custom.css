@@ -1,9 +1,9 @@
 body{
     position: relative;
+    padding: 0px;
 }
 
 #top{
-    float: none;
     position: relative;
     background-image:url(images/coffeeCloseUp.jpg);
     background-size: cover;
@@ -16,16 +16,17 @@ body{
 .navbar-fixed-top{
     position: fixed;
     width: 100%;
-    margin: 0 2px 0 -2px;
-    z-index: 9999;
+    z-index: 999999;
     text-shadow: none;
-}
-#navAcross{
-    position: relative;
-    margin-left: 350px;
-    
+  
 }
 
+#navbarCollapse {
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+
+}
 /*Collapsse Toggle bar color*/
 .icon-bar{
     background-color: darkgray;
@@ -33,6 +34,7 @@ body{
 
 /*Nav Text*/
 .navBtnTop {
+    position: relative;
     color: #faf0e4;
     font-weight: 500;
     font-size: 1.2em;
@@ -69,7 +71,7 @@ body{
 
 #aboutUs{
     position: relative;
-    height: 450px;
+    height: auto;
     margin-top: 20px;
     padding-top: 40px;
 
@@ -212,13 +214,17 @@ body{
 }
 
 
-
-/*Navbar media query*/
-@media (min-width: 500px){
+Navbar media query
+@media (max-width: 700px) {
     .navbar-nav{
         margin: 0 auto;
         display: table;
         table-layout: fixed;
         float:none;
+        border: none;
+    }
+    #top{
+        background-image: hide;
+        height: auto;
     }
 }

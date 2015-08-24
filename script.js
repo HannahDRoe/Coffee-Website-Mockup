@@ -1,6 +1,6 @@
 
 $(document).ready(function(){       
-   var scroll_start = 300;
+   var scroll_start = 0;
    var startchange = $('#startChange');
    var offset = startchange.offset();
     if (startchange.length){
@@ -24,5 +24,12 @@ $(window).scroll(function(){
     } else {
         $("#backToTop").fadeOut('slow');
     }
+});
+
+$(document).ready(function(){
+  $('ul li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+  });
 });
 
