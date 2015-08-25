@@ -11,7 +11,7 @@ body{
     background-size: cover;
     height: 700px;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
     
 }
 
@@ -21,7 +21,7 @@ body{
     position: relative;
     width: 450px;
     margin: 0 auto;
-    z-index: 99999999;
+    z-index: 9999;
 
 }
 
@@ -80,6 +80,11 @@ body{
     align-content: center;
 }
 
+#ourPeople{
+   position: relative;
+    margin-top: 50px;
+}
+
 /*Carousel*/
 #myCarousel{
     position: relative;
@@ -136,7 +141,7 @@ body{
 }
 .carousel-indicators .active {
   	background-color: rgba(0, 0, 0, 0.78);
-    z-index: -50;
+    z-index: 2 !important;
 }
 
 /*Menu Jumbotron*/
@@ -194,22 +199,23 @@ body{
 
 #backToTop{
     position: fixed;
-    height: 80px;
-    width: 80px;
-    color: grey;
-    background-color: black;
-    z-index: 999999;
-    bottom: 400px;
+    height: 50px;
+    width: 50px;
+    top: 60%;
+    bottom: 50%;
     right: 0px;
     font-size: 30px;
     text-align: center;
-    padding-top: .6em;
+    padding-top: .35em;
     display: none;
+    color: #414141;
+    background-color: #b4b1b1;
+    z-index: 999999;
 }
 
 
 /*Navbar media query*/
-@media (max-width: 700px) {
+@media only screen and (max-width: 479px) {
     .navbar-nav{
         margin: 0 auto;
         display: table;
@@ -217,7 +223,7 @@ body{
         border: none;
     }
     #top{
-        background-image: none;
+        background: none;
         height: auto;
     }
 }
