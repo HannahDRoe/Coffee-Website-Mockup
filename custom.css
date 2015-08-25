@@ -4,6 +4,7 @@ body{
     height: 100%;
 }
 
+/*Header and background*/
 #top{
     position: relative;
     background-image:url(images/coffeeCloseUp.jpg);
@@ -14,21 +15,16 @@ body{
     
 }
 
-.navbar-fixed-top{
-    position: fixed;
-    width: 100%;
-    z-index: 999999;
-    text-shadow: none;
-  
-}
 
+/*Navbar position*/
 #navbarCollapse {
     position: relative;
     width: 450px;
     margin: 0 auto;
-    z-index: 9999;
+    z-index: 99999999;
 
 }
+
 /*Collapsse Toggle bar color*/
 .icon-bar{
     background-color: darkgray;
@@ -37,7 +33,7 @@ body{
 /*Nav Text*/
 .navBtnTop {
     position: relative;
-    color: #faf0e4;
+    color: #f0e2d2;
     font-weight: 500;
     font-size: 1.2em;
     text-shadow: none !important;
@@ -48,20 +44,14 @@ body{
 /*Nav Hover Effects */
 .navBtnTop:hover{
     color: #fff2bb;
-    font-weight: 500;
-    font-size: 1.2em;
     text-shadow: none;
-    border-bottom: 2px solid #fff2bb;
     background-color: transparent !important;
 }
 /*Nav Active Effects*/
 .nav .active{
     color:#fff2bb;
     text-shadow: none;
-    border-bottom: 2px solid #fff2bb;
-    font-weight: 400;
-    font-size: 1em;
-   
+    border-bottom: 2.5px solid #fff2bb;
 }
 
 /* Div for Navbar color change*/
@@ -71,6 +61,7 @@ body{
     margin-top: -50;
 }
 
+/*AboutUs*/
 #aboutUs{
     position: relative;
     height: auto;
@@ -141,11 +132,11 @@ body{
    	border-radius: 50%;
    	border: 3px solid transparent;
    	box-shadow: rgba(0, 0, 0, 0.8) 0 0 2px;
-    z-index: 99;
 
 }
 .carousel-indicators .active {
   	background-color: rgba(0, 0, 0, 0.78);
+    z-index: -50;
 }
 
 /*Menu Jumbotron*/
@@ -217,17 +208,16 @@ body{
 }
 
 
-Navbar media query
+/*Navbar media query*/
 @media (max-width: 700px) {
     .navbar-nav{
         margin: 0 auto;
         display: table;
         table-layout: fixed;
-        float:none;
         border: none;
     }
     #top{
-        background-image: hide;
+        background-image: none;
         height: auto;
     }
 }
