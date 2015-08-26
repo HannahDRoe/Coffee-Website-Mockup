@@ -25,7 +25,7 @@ if($(window).width() >= 768){
             $("#backToTop").fadeOut('slow');
         }
     });
-
+//Adding the active class to navbar
     $(document).ready(function(){
       $('ul li a').scroll(function(){
         $('li a').removeClass("active");
@@ -33,3 +33,10 @@ if($(window).width() >= 768){
       });
     });
 }
+
+
+    $(document).ready(function(){
+        $(".navbar-nav li a").click(function(event) {
+            $(".navbar-collapse").collapse('hide');
+        });
+    });

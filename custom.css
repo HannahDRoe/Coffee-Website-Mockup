@@ -169,33 +169,63 @@ body{
 }
 
 #instagram {
-    top: 960px;
+    top: 880px;
     position: relative;
-    height: 400px;
+    height: 600px;
     width: 100%;
     margin: 0 auto;
-    background-color: #716660;
+
+    
     
 }
-#instagramInception{
-    position: relative;
-    align-content: center;
+
+#instaBlurb{
+    font-size: 1.8em;
+    height:80px;
+    padding-top: 25px;
+}
+table{
+    height: 70%;
+    width: 70%;
+    border-spacing: 5px;
     margin: 0 auto;
-    height: 75%;
-    width: 50%;
-    top: 13%;
-    background-color: #4F3938
+    
+}
+td{
+    text-align: center;
+    padding:2%;
+    background-color: pink;
 }
 
 #findUs{
-    top: 960px;
+    top: 880px;
     position: relative;
     height: 600px;
     width: 100%;
     margin: 0 auto;
     background-color: #fff2bb;
 }
+#contact{
+    font-size: 1.8em;
+    font-weight: bold;
+    padding-top: 3%;
+    color: #ed6d3e;
+}
+#emailPhone{
 
+}
+#address {
+    margin-top: -10px;
+}
+#maps{
+    position: relative;
+    height: 300px;
+    width: 330px;
+    align-content: center;
+    background-color: purple;
+    margin: 0 auto;
+    top: 40px;
+}
 
 #backToTop{
     position: fixed;
@@ -213,13 +243,32 @@ body{
     z-index: 999999;
 }
 
+footer{
+    text-align: center;
+    position: relative;
+    top: 850px;
+}
 
 /*Navbar media query*/
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 768px) {
     .navbar-nav{
         margin: 0 auto;
-        display: table;
-        table-layout: fixed;
+        border: none;
+        background-color: #fff;
+    }
+    .navBtnTop{
+    color: rgb(88, 88, 88);
+    font-size: 1.2em;
+    text-shadow: none !important;
+    text-align: center;
+    }
+    .navBtnTop:hover{
+    color: #8b8b8a;
+    text-shadow: none;
+    }
+    .navBtnTop:active{
+        color:#8b8b8a;
+        text-shadow: none;
         border: none;
     }
     #top{
