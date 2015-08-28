@@ -32,7 +32,7 @@
                <nav class="navbar navbar-fixed-top scrollspy" data-spy="affix" role="navigation" >
                    <div class="container-fluid">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="button">
                                 <span class="sr-only"> Toggle Navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -129,7 +129,7 @@
                 <p>At macchiato robusta, percolator cortado, doppio, that ut arabica, flavour acerbic in sugar aromatic, cup shop iced decaffeinated bar lungo instant white frappuccino. Ut iced seasonal espresso spoon, irish, single shot qui barista medium, crema arabica doppio cream whipped ut filter. </p>
             </div>
             <div class="text-center"> 
-               <button id="download" class="btn btn-default" type="button">Download Menu
+               <button id="download" class="btn btn-default" type="button" role="button">Download Menu
                  <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>  
                 </button>
                  </div> <!--Download Button Positioning-->
@@ -173,14 +173,16 @@
         </div>
     
         <!--Find Us-->
-        <div id="findUs" class="textBox">
-            <p id="contact">Contact Us </p>
-            <p id="emailPhone"><br>Email: info@coffee.com <br>Phone: (888)123-4567 <br> </p>
-            <p id="address">Address: 567 Appletown Rd.<br> Greenway, Michigan 75412</p>
-       
+        <div id="findUs" class="textBox row">
+            <h3 id="contact" class="col-lg-12">Contact Us </h3>
+            <div>
+                
+                <p id="contactInfo"><br>Email: info@coffee.com <br>Phone: (888)123-4567 <br> Address: 567 Appletown Rd.<br> Greenway, Michigan 75412</p>
+            </div>
+     
             <div id="maps"></div>
         </div>
-     
+        
         
     
 
@@ -190,7 +192,22 @@
     <!--BackToTop Button-->
     <div><a href="#"><span class="glyphicon glyphicon-menu-up" id="backToTop"></span></a></div>  
     
-<footer>&copy;The Cofee Shop</footer>
+    
+    <div id="followUs">
+        <h4 id="follow">Follow US</h4>
+                <ul class="socialMedia">
+                    <li><a href="http://www.facebook.com"><img src="images/facebook.svg" alt="Visit Us on Facebook" class="socialCircle"></a></li>
+                    <li><a href="http://www.twitter.com"><img src="images/twitter_circle.svg" alt="Visit Us on Twitter" class="socialCircle"></a></li>
+                    <li><a href="http://www.pinterest.com"><img src="images/pinterest_circle.svg" alt="Visit Us on Pinterest" class="socialCircle"></a></li>
+            
+                </ul>
+        </div>
+    
+    <footer> 
+        
+        <p>&copy;The Cofee Shop</p>
+    </footer>
+    
     
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

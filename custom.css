@@ -168,6 +168,7 @@ body{
     font-family: monospace;
 }
 
+/*Instagram grid*/
 #instagram {
     top: 880px;
     position: relative;
@@ -178,7 +179,6 @@ body{
     
     
 }
-
 #instaBlurb{
     font-size: 1.8em;
     height:80px;
@@ -197,10 +197,12 @@ td{
     background-color: pink;
 }
 
+
+/*Find Us*/
 #findUs{
     top: 880px;
     position: relative;
-    height: 600px;
+    height: 700px;
     width: 100%;
     margin: 0 auto;
     background-color: #fff2bb;
@@ -208,23 +210,53 @@ td{
 #contact{
     font-size: 1.8em;
     font-weight: bold;
-    padding-top: 3%;
+    padding-top: 2%;
     color: #ed6d3e;
+    height: 10%;
+    position: static;
+    text-align: center;
 }
-#emailPhone{
+#contactInfo{
+    position: static;
+    height: 15%;
+    text-align: center;
+}
 
-}
-#address {
-    margin-top: -10px;
-}
+/*Google Maps API*/
 #maps{
-    position: relative;
+    position: static;
     height: 300px;
     width: 330px;
     align-content: center;
     background-color: purple;
+    margin: 50px auto 0 auto; 
+    margin-top: 5%;
+    
+}
+
+/*Social Media buttons*/
+#followUs{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    top: 870px;
+}
+.socialCircle{
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+.socialMedia{
     margin: 0 auto;
-    top: 40px;
+    list-style: none;
+    text-align: center;
+    
+}
+
+
+#follow{
+ position: relative;
+ text-align:  center;
 }
 
 #backToTop{
@@ -244,10 +276,12 @@ td{
 }
 
 footer{
-    text-align: center;
     position: relative;
-    top: 850px;
+    top: 870px;
+    text-align: center;
 }
+
+
 
 /*Navbar media query*/
 @media only screen and (max-width: 768px) {
