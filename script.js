@@ -16,7 +16,7 @@ if($(window).width() >= 768){
     });
 
     // Back to top button 
-    var amountScrolled = 2500;
+    var amountScrolled = 2600;
 
     $(window).scroll(function(){
         if ($(window).scrollTop() > amountScrolled) {

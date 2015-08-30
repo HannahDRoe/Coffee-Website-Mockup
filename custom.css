@@ -172,21 +172,20 @@ body{
 #instagram {
     top: 880px;
     position: relative;
-    height: 600px;
+    height: 650px;
     width: 100%;
     margin: 0 auto;
 
-    
-    
 }
 #instaBlurb{
+    position: relative;
     font-size: 1.8em;
     height:80px;
     padding-top: 25px;
 }
 table{
-    height: 70%;
-    width: 70%;
+    height: 60%;
+    width: 60%;
     border-spacing: 5px;
     margin: 0 auto;
     
@@ -197,10 +196,33 @@ td{
     background-color: pink;
 }
 
+#intstaBottom{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    top: -40;
+    
+    
+}
+#instaText{
+    position: relative;
+    width: 400px;
+    font-size: 1.3em;
+    text-align: center;
+    
+}
+
+#instaCircle{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: auto;
+ 
+}
 
 /*Find Us*/
 #findUs{
-    top: 880px;
+    top: 910px;
     position: relative;
     height: 700px;
     width: 100%;
@@ -217,8 +239,8 @@ td{
     text-align: center;
 }
 #contactInfo{
-    position: static;
-    height: 15%;
+    position: relative;
+    height: 80px;
     text-align: center;
 }
 
@@ -234,31 +256,40 @@ td{
     
 }
 
-/*Social Media buttons*/
-#followUs{
-    position: relative;
-    height: 80px;
+
+    
+    
+}
+/*Follow Us Area*/
+#socialContainer{
     width: 100%;
-    top: 870px;
-}
-.socialCircle{
-    position: relative;
-    height: 40px;
-    width: 40px;
-}
-.socialMedia{
-    margin: 0 auto;
-    list-style: none;
-    text-align: center;
     
 }
 
-
-#follow{
- position: relative;
- text-align:  center;
+/*Social Media Area*/
+#socialIcons{
+    position: relative;
+    top: 910px;
+    margin: 0 auto;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: monospace;
 }
 
+/*Social Media Circles*/
+.socialCircle{
+    height: 40px;
+    width: 40px;
+    list-style: none;
+    margin: 5px 7px 0 10px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+
+/*Back to the Top Button*/
 #backToTop{
     position: fixed;
     height: 50px;
@@ -277,7 +308,7 @@ td{
 
 footer{
     position: relative;
-    top: 870px;
+    top: 910px;
     text-align: center;
 }
 
