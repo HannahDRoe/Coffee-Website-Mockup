@@ -168,7 +168,7 @@ body{
     font-family: monospace;
 }
 
-/*Instagram grid*/
+/*Instagram Table*/
 #instagram {
     top: 880px;
     position: relative;
@@ -196,22 +196,20 @@ td{
     background-color: pink;
 }
 
+/*Instagram Follow*/
 #intstaBottom{
     position: relative;
-    height: 100px;
+    height: 140px;
     width: 100%;
     top: -40;
-    
-    
 }
 #instaText{
     position: relative;
     width: 400px;
     font-size: 1.3em;
     text-align: center;
-    
 }
-
+/*Instagram Icon*/
 #instaCircle{
     height: 50px;
     width: 50px;
@@ -244,22 +242,17 @@ td{
     text-align: center;
 }
 
-/*Google Maps API*/
+/*Google Maps API Place Holder*/
 #maps{
-    position: static;
+    position: relative;
     height: 300px;
     width: 330px;
-    align-content: center;
     background-color: purple;
-    margin: 50px auto 0 auto; 
-    margin-top: 5%;
-    
+    display: block;
+    margin: 30px auto 0 auto;
 }
 
 
-    
-    
-}
 /*Follow Us Area*/
 #socialContainer{
     width: 100%;
