@@ -243,13 +243,14 @@ td{
 }
 
 /*Google Maps API Place Holder*/
-#maps{
+#map{
     position: relative;
-    height: 300px;
-    width: 330px;
-    background-color: purple;
+    height: 400px;
+    width: 400px;
     display: block;
-    margin: 30px auto 0 auto;
+    margin: 7% auto 0 auto;
+    border: 2px solid peru; 
+    border-radius: 2px;
 }
 
 

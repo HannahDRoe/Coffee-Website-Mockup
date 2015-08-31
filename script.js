@@ -34,9 +34,22 @@ if($(window).width() >= 768){
     });
 }
 
-
+//Navbar collapse Hidden when an option is selected
     $(document).ready(function(){
         $(".navbar-nav li a").click(function(event) {
             $(".navbar-collapse").collapse('hide');
         });
     });
+
+//Google Maps 
+    function initialize( ) {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+            center: new google.maps.LatLng(44.5403, -78.5463),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
