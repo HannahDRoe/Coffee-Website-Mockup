@@ -34,12 +34,14 @@ if($(window).width() >= 768){
     });
 }
 
+
 //Navbar collapse Hidden when an option is selected
     $(document).ready(function(){
         $(".navbar-nav li a").click(function(event) {
             $(".navbar-collapse").collapse('hide');
         });
     });
+        
 
 //Google Maps 
     function initialize( ) {
