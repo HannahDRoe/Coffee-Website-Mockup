@@ -25,19 +25,18 @@ if($(window).width() >= 668){
             $("#backToTop").fadeOut('slow');
         }
     });
-//Adding the active class to navbar
-    $(document).ready(function(){
-      $('ul li a').scroll(function(){
-        $('li a').removeClass("active");
-        $(this).addClass("active");
-      });
-    });
-}
-
+// //Adding the active class to navbar
+     $(document).ready(function(){
+       $('#navAcross').scroll(function(){
+         $('.navList').removeClass("active");
+         $(this).addClass("active");
+       });
+     });
+ }
 
 //Navbar collapse Hidden when an option is selected
     $(document).ready(function(){
-        $(".navbar-nav li a").click(function(event) {
+        $("#navAcross").click(function(event) {
             $(".navbar-collapse").collapse('hide');
         });
     });
