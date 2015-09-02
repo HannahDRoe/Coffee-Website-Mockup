@@ -1,4 +1,4 @@
-if($(window).width() >= 768){
+if($(window).width() >= 668){
     $(document).ready(function(){       
        var scroll_start = 0;
        var startchange = $('#startChange');

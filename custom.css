@@ -144,7 +144,7 @@ body{
     z-index: 2 !important;
 }
 
-/*Menu Area*/
+/*Menu Jumbotron*/
 #coffeeSmile {
     position: absolute;
     background-image:
@@ -257,9 +257,7 @@ td{
 
 /*Follow Us Area*/
 #socialContainer{
-    
     width: 100%;
-    top: 500;
     
 }
 
@@ -326,13 +324,6 @@ footer{
         padding: 0;
         
     }
-    
-     /*Header and background*/
-    #top{
-        background: none;
-        height: auto;
-    }
-    
     .navbar-toggle{
         background-color: aliceblue;
         z-index: 100000;
@@ -373,54 +364,16 @@ footer{
         border-bottom: none;
     }
     
-    /*AboutUs*/
-    #aboutUs{
-    height: 400px;
-  
-    }
-
-        
-    
-    /*Carousel*/
-    #myCarousel{
-        height: 300px;
-        
+    /*Header and background*/
+    #top{
+        background: none;
+        height: auto;
     }
     
-    /*Menu Area*/
-    #coffeeSmile {
-   height: 550px
-    }
-    
-    /*Menu Text*/
-    #menuText{
-        font-size: 1.15em;
-    }
-    
-    #instagram {
-        top:530;
-    }
-    
-    
-    /*Find Us*/
-    #findUs{
-        top:550;
-        height: 500;
-    }
     
     /*Google Maps*/
     #map{
         height: 250px;
         width: 250px;
     }
-    
-    /*Social Media Area*/
-    #socialIcons{
-        top: 550;
-    }
-    
-    footer{
-     top: 550;   
-    }
 }
-
