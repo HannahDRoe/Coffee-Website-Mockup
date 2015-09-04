@@ -22,14 +22,13 @@
      
     </head>
     
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body>
         
        
         <header id="top"> 
-        
-        
+
                   <!--Navigation-->
-               <nav class="navbar navbar-fixed-top" data-spy="affix" role="navigation" >
+               <div class="navbar navbar-fixed-top" role="navigation" >
                    <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" role="button">
@@ -39,9 +38,9 @@
                                 <span class="icon-bar"></span>
                             </button> 
                         </div> <!-- Toggle Button and nav list Div-->
-                   
+                   <div class="container">
 
-                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <nav id="navigation" class="collapse navbar-collapse" data-spy="affix-top">
                             <ul class="nav navbar-nav" id="navAcross">
                                 <li class="navList"><a href="#top" class="navBtnTop hidden-xs" >Home</a></li>
                                 <li class="navList"><a href="#aboutUs" class="navBtnTop">About Us</a></li>
@@ -51,20 +50,20 @@
                                 
                             
                             </ul>
-                        </div><!--Nav List-->
+                        </nav><!--Nav List-->
+                       </div>
                     </div>
-                </nav>
+                </div>
 
-   
-            <div id="logo">
-            </div>
          
          </header>
+        
+        
         <!--NavBar color change-->
         <div id="startChange"></div>
         
         <!--About Us-->
-        <div class="container-fluid" id="aboutUs">
+        <div class="container" id="aboutUs">
             <div class="row">
                 <section class="textBox">
                     <h2>About Us</h2></br>
@@ -78,67 +77,67 @@
         </div> 
   
         <!--Carousel-->
-        <div class="container main-container" id="ourPeople">
-            <h2 class="textBox col-med-12" id="ourPeople">Our People</h2>
+        <div class="container-fluid main-container">
+            <div id="ourPeople">
+               <p class="textBox col-med-12" id="carouselHeader">Our People</p>
 
-            <div id="myCarousel" class="carousel slide" data-pause="hover">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol>
+                <div id="myCarousel" class="carousel slide" data-pause="hover">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
 
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
 
-                <!-- First slide -->
-                <div class="item active" id="slideOne">
-                
-                </div> <!-- /.item -->
+                    <!-- First slide -->
+                    <div class="item active" id="slideOne">
 
-                <!-- Second slide -->
-                <div class="item">
-                  <div id="slideTwo"></div>
-                </div><!-- /.item -->
+                    </div> <!-- /.item -->
 
-                <!-- Third slide -->
-                <div class="item">
-                    <div id="slideThree"></div>
-                  </div><!-- Item3 -->
+                    <!-- Second slide -->
+                    <div class="item">
+                      <div id="slideTwo"></div>
+                    </div><!-- /.item -->
 
-              </div><!--Carousel-inner -->
+                    <!-- Third slide -->
+                    <div class="item">
+                        <div id="slideThree"></div>
+                      </div><!-- Item3 -->
 
-              <!-- Controls -->
-              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div><!--Carousel -->
+                  </div><!--Carousel-inner -->
 
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div><!--Carousel -->
+            </div>
         </div><!-- Carousel container -->
 
     
         <!--Menu Jumbotron-->
         <div id="menuArea">
-        
             <div id="menuText">
-                <h2> Our Coffee Bar</h2>
+                <p id="coffeeBar"> Our Coffee Bar</p>
             
                 <p>Arabica flavour plunger pot affogato black, brewed affogato breve, flavour cortado, medium qui affogato aroma, cortado saucer dripper trifecta mug aged caramelization.</p>
                 <p>At macchiato robusta, percolator cortado, doppio, that ut arabica, flavour acerbic in sugar aromatic, cup shop iced decaffeinated bar lungo instant white frappuccino. Ut iced seasonal espresso spoon, irish, single shot qui barista medium, crema arabica doppio cream whipped ut filter. </p>
+                <div class="text-center"> 
+                   <button id="download" class="btn btn-default" type="button" role="button">Download Menu
+                     <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>  
+                    </button>
+                </div> <!--Download Button Positioning-->
             </div>
-            <div class="text-center"> 
-               <button id="download" class="btn btn-default" type="button" role="button">Download Menu
-                 <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>  
-                </button>
-            </div> <!--Download Button Positioning-->
-           
-          </div><!--Menu and Coffee Blurb-->
+            
+        </div><!--Menu and Coffee Blurb-->
 
 
 
@@ -210,7 +209,6 @@
         <!--BackToTop Button-->
         <div><a href="#"><span class="glyphicon glyphicon-menu-up" id="backToTop"></span></a></div>  
     
-       
     <footer> 
         
         <p>&copy;The Cofee Shop</p>

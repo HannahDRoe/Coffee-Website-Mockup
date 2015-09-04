@@ -17,7 +17,7 @@ body{
 
 
 /*Navbar position*/
-#navbarCollapse {
+#navigation {
     position: relative;
     width: 450px;
     margin: 0 auto;
@@ -81,17 +81,21 @@ body{
 }
 
 #ourPeople{
-   position: relative;
-    margin-top: 50px;
+    position: relative;
+    padding-top: 25px;
+    height: 800px;
 }
 
+#carouselHeader{
+    font-size: 2em;
+}
 /*Carousel*/
 #myCarousel{
     position: relative;
     background-color:#916E46;
     height: 600px;
-    width: 100%;
-    margin: 0 auto 10px auto;
+    margin: 0 auto;
+
 }
 
 /*Carousel images*/
@@ -145,16 +149,18 @@ body{
 }
 
 /*Menu Jumbotron*/
-#menuArea {
-    position: absolute;
+#menuArea{
+    position: relative;
     background-image:
-        linear-gradient(
+    linear-gradient(
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ), url(images/coffeeSmiley.jpg);
+      rgba(0, 0, 0, 0.5)), 
+    url(images/coffeeSmiley.jpg);
     background-size: cover;
-    height: 900px;
+    height: 800px;
     width: 100%;
+    margin: 10em auto 0 auto;
+
 
 }
 /*Menu Text*/
@@ -162,18 +168,34 @@ body{
     position: relative;
     color: white;
     text-align: center;
-    align-content: center;
     font-family: monospace;
-    height: 100%;
-}
+    font-size: 1.3em;
+    height: 30em;
+    width: 90%;
+    margin: 0 auto;
+    top: 100px;
+    padding-top: 10%;
 
+}
+#coffeeBar{
+    font-size: 2em;
+    font-family: monospace;
+    
+}
+#download{
+    font-family: sans-serif;
+    position: relative;
+    margin-top: 20px;
+    height: 40px;
+    
+    
+}
 /*Instagram Table*/
 #instagram {
-    top: 880px;
     position: relative;
-    height: 650px;
+    height: 675px;
     width: 100%;
-    margin: 0 auto;
+    margin: 10em auto 0 auto;
 
 }
 #instaBlurb{
@@ -220,12 +242,12 @@ td{
 
 /*Find Us*/
 #findUs{
-    top: 910px;
     position: relative;
     height: 700px;
     width: 100%;
     margin: 0 auto;
     background-color: #fff2bb;
+    padding-top: 30px;
 }
 #contact{
     font-size: 1.8em;
@@ -263,7 +285,7 @@ td{
 /*Social Media Area*/
 #socialIcons{
     position: relative;
-    top: 910px;
+    top: 80px;
     margin: 0 auto;
     width: 250px;
     height: 100px;
@@ -302,8 +324,10 @@ td{
 
 footer{
     position: relative;
-    top: 910px;
     text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    top: 130px;
 }
 
 
@@ -329,7 +353,7 @@ footer{
     }
     
     /*Navbar position*/
-    #navbarCollapse{
+    #navigation{
         position: fixed;
         margin: 0 auto;
         margin-top: -50px;

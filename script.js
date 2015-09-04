@@ -25,21 +25,30 @@ if($(window).width() >= 668){
             $("#backToTop").fadeOut('slow');
         }
     });
-// //Adding the active class to navbar
+    
+     /* Adding the active class to navbar
      $(document).ready(function(){
-       $('#navAcross').scroll(function(){
-         $('.navList').removeClass("active");
+       $('nav ul li').scroll(function(){
+         $('li a').removeClass("active");
          $(this).addClass("active");
        });
-     });
+     });*/
+    
+   
  }
+
+    $('body').scrollspy({ target: '#navigation' });
+
+    $('[data-spy="scroll"]').each(function () {
+      var $spy = $(this).scrollspy('refresh')
+    })
 
 //Navbar collapse Hidden when an option is selected
     $(document).ready(function(){
         $("#navAcross").click(function(event) {
             $(".navbar-collapse").collapse('hide');
-        });
     });
+});
         
 
 //Google Maps 
