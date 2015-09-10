@@ -188,57 +188,7 @@ body{
     margin-top: 20px;
     height: 40px;
     
-    
-}
-/*Instagram Table*/
-#instagram {
-    position: relative;
-    height: 675px;
-    width: 100%;
-    margin: 10em auto 0 auto;
 
-}
-#instaBlurb{
-    position: relative;
-    font-size: 1.8em;
-    height:80px;
-    padding-top: 25px;
-}
-table{
-    height: 60%;
-    width: 60%;
-    border-spacing: 5px;
-    margin: 0 auto;
-    
-}
-td{
-    text-align: center;
-    padding:2%;
-    background-color: pink;
-}
-
-/*Instagram Follow*/
-#intstaBottom{
-    position: relative;
-    height: 140px;
-    width: 100%;
-    top: -40;
-}
-#instaText{
-    position: relative;
-    width: 100%;
-    font-size: 1.3em;
-    text-align: center;
-    align-content: center;
-}
-/*Instagram Icon*/
-#instaCircle{
-    height: 50px;
-    width: 50px;
-    display: block;
-    margin: auto;
- 
-}
 
 /*Find Us*/
 #findUs{
