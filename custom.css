@@ -1,283 +1,343 @@
-body{
+@import 'main.scss';
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+body
+{
     position: relative;
-    padding: 0px;
+
     height: 100%;
+    padding: 0;
 }
 
 /*Header and background*/
-#top{
+#top
+{
     position: relative;
-    background-image:url(images/coffeeCloseUp.jpg);
-    background-size: cover;
-    height: 700px;
-    width: 100%;
     z-index: 999;
-    
+
+    width: 100%;
+    height: 700px;
+
+    background-image: url(images/coffeeCloseUp.jpg);
+    background-size: cover;
 }
 
 
 /*Navbar position*/
-#navigation {
+#navigation
+{
     position: relative;
-    width: 450px;
-    margin: 0 auto;
     z-index: 9999;
 
+    width: 450px;
+    margin: 0 auto;
 }
 
 /*Collapsse Toggle bar color*/
-.icon-bar{
-    background-color: darkgray;
+.icon-bar
+{
+    background-color: #383030;
 }
 
 /*Nav Text*/
-.navBtnTop {
-    position: relative;
-    color: #f0e2d2;
-    font-weight: 500;
+.navBtnTop
+{
     font-size: 1.2em;
-    text-shadow: none !important;
-    text-align: center;
+    font-weight: 500;
+
+    position: relative;
+
     width: 100%;
 
+    text-align: center;
+
+    color: #f0e2d2;
+    text-shadow: none !important;
 }
 /*Nav Hover Effects */
-.navBtnTop:hover{
+.navBtnTop:hover
+{
     color: #fff2bb;
-    text-shadow: none;
     background-color: transparent !important;
+    text-shadow: none;
 }
 /*Nav Active Effects*/
-.nav .active{
-    color:#fff2bb;
-    text-shadow: none;
+.nav .active
+{
+    color: #fff2bb;
     border-bottom: 2.5px solid #fff2bb;
+    text-shadow: none;
 }
 
 /* Div for Navbar color change*/
-#startChange {
+#startChange
+{
     position: relative;
+
     height: 30px;
     margin-top: -50;
 }
 
 /*AboutUs*/
-#aboutUs{
+#aboutUs
+{
     position: relative;
+
     height: auto;
     margin-top: 20px;
     padding-top: 40px;
-
+    @include textBox;
 }
 
-/*TextFormatting*/
-.textBox{
-    text-align: center;
-    width: 100%;
-    height: auto;
-    font-family: monospace;
-    margin: 80px auto 30px auto;
-    align-content: center;
-}
-
-#ourPeople{
+/*Our People, beginning of carousel div*/
+#ourPeople
+{
     position: relative;
-    padding-top: 25px;
+
     height: 800px;
+    padding-top: 25px;
 }
 
-#carouselHeader{
+#carouselHeader
+{
     font-size: 2em;
 }
+
 /*Carousel*/
-#myCarousel{
+#myCarousel
+{
     position: relative;
-    background-color:#916E46;
+
     height: 600px;
     margin: 0 auto;
 
+    background-color: #916e46;
 }
 
 /*Carousel images*/
-.item{
+.item
+{
     width: 100%;
     height: 100%;
 }
-#slideOne{
+#slideOne
+{
     background-image: url(images/cafe.jpg);
     background-position: center;
     background-size: cover;
-
 }
 
 /*Carousel hover/focus colors*/
 .carousel-control:hover,
-.carousel-control:focus {
-    color: rgba(0, 0, 0, 0.5);
+.carousel-control:focus
+{
+    color: rgba(0, 0, 0, .5);
 }
 
 /*Carousel Controls*/
-.carousel-control{
-    background: none !important;
-    color:rgba(0, 0, 0, 0.71);
+.carousel-control
+{
     font-size: 2em;
+
+    color: rgba(0, 0, 0, .71);
+    background: none !important;
 }
 /*Carousel Controls position*/
 .glyphicon-menu-right,
-.glyphicon-menu-left{
+.glyphicon-menu-left
+{
     position: absolute;
     top: 50%;
     bottom: 50%;
-    
 }
 
 /*Carousel Indicators Position and colors*/
-.carousel-indicators li{
-  	display: inline-block;
-   	width: 10px;
-   	height: 10px;
-   	margin: 0 2px;
-   	background: transparent;
-   	border-radius: 50%;
-   	border: 3px solid transparent;
-   	box-shadow: rgba(0, 0, 0, 0.8) 0 0 2px;
+.carousel-indicators li
+{
+    display: inline-block;
 
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+
+    border: 3px solid transparent;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, .8) 0 0 2px;
 }
-.carousel-indicators .active {
-  	background-color: rgba(0, 0, 0, 0.78);
+.carousel-indicators .active
+{
     z-index: 2 !important;
+
+    background-color: rgba(0, 0, 0, .78);
 }
 
 /*Menu Jumbotron*/
-#menuArea{
+#menuArea
+{
     position: relative;
-    background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)), 
-    url(images/coffeeSmiley.jpg);
-    background-size: cover;
-    height: 800px;
+
     width: 100%;
+    height: 800px;
     margin: 10em auto 0 auto;
 
-
+    background-image: linear-gradient(
+    rgba(0, 0, 0, .5),
+    rgba(0, 0, 0, .5)),
+    url(images/coffeeSmiley.jpg);
+    background-size: cover;
 }
 /*Menu Text*/
-#menuText{
+#menuText
+{
     position: relative;
-    color: white;
-    text-align: center;
-    font-family: monospace;
-    font-size: 1.3em;
-    height: 30em;
-    width: 90%;
-    margin: 0 auto;
     top: 100px;
+
+    width: 90%;
+    height: 30em;
+    margin: 0 auto;
     padding-top: 10%;
 
+    color: white;
+    @include textBox;
 }
-#coffeeBar{
-    font-size: 2em;
-    font-family: monospace;
-    
+#coffeeBar
+{
+    @include textBox;
 }
-#download{
+#download
+{
     font-family: sans-serif;
+
     position: relative;
-    margin-top: 20px;
+
     height: 40px;
-    
+    margin-top: 20px;
+}
+
 
 
 /*Find Us*/
-#findUs{
+#findUs
+{
     position: relative;
-    height: 700px;
+
     width: 100%;
+    height: 700px;
     margin: 0 auto;
-    background-color: #fff2bb;
     padding-top: 30px;
+
+    background-color: #fff2bb;
 }
-#contact{
+#contact
+{
     font-size: 1.8em;
     font-weight: bold;
-    padding-top: 2%;
-    color: #ed6d3e;
-    height: 10%;
+
     position: static;
-    text-align: center;
+
+    height: 10%;
+    padding-top: 2%;
+
+    color: #ed6d3e;
+    @include textBox;
 }
-#contactInfo{
+#contactInfo
+{
     position: relative;
+
     height: 80px;
+
     text-align: center;
 }
 
 /*Google Maps*/
-#map{
+#map
+{
     position: relative;
-    height: 400px;
-    width: 400px;
+
     display: block;
+
+    width: 400px;
+    height: 400px;
     margin: 7% auto 0 auto;
-    border: 2px solid peru; 
+
+    border: 2px solid peru;
     border-radius: 2px;
 }
 
 
 /*Follow Us Area*/
-#socialContainer{
+#socialContainer
+{
     width: 100%;
-    
 }
 
 /*Social Media Area*/
-#socialIcons{
+#socialIcons
+{
+    font-family: monospace;
+    font-size: 1.2em;
+
     position: relative;
     top: 80px;
-    margin: 0 auto;
+
     width: 250px;
     height: 100px;
+    margin: 0 auto;
+
     text-align: center;
-    font-size: 1.2em;
-    font-family: monospace;
 }
 
 /*Social Media Circles*/
-.socialCircle{
-    height: 40px;
-    width: 40px;
-    list-style: none;
-    margin: 5px 7px 0 10px;
-    text-align: center;
+.socialCircle
+{
     display: inline-block;
     float: left;
+
+    width: 40px;
+    height: 40px;
+    margin: 5px 7px 0 10px;
+
+    list-style: none;
+
+    text-align: center;
 }
 
 /*Back to the Top Button*/
-#backToTop{
-    position: fixed;
-    height: 50px;
-    width: 50px;
-    top: 60%;
-    bottom: 50%;
-    right: 0px;
+#backToTop
+{
     font-size: 30px;
-    text-align: center;
-    padding-top: .35em;
+
+    position: fixed;
+    z-index: 999999;
+    top: 60%;
+    right: 0;
+    bottom: 50%;
+
     display: none;
+
+    width: 50px;
+    height: 50px;
+    padding-top: .35em;
+
+    text-align: center;
+
     color: #414141;
     background-color: #b4b1b1;
-    z-index: 999999;
 }
 
-footer{
+footer
+{
     position: relative;
-    text-align: center;
-    margin: 0 auto;
-    width: 200px;
     top: 130px;
+
+    width: 200px;
+    margin: 0 auto;
+
+    text-align: center;
 }
 
 
@@ -292,61 +352,77 @@ footer{
 
 
 /*Navbar media query*/
-@media only screen and (max-width: 768px) {
-    body{
+@media only screen and (max-width: 768px)
+{
+    body
+    {
         padding: 0;
-        
     }
-    .navbar-toggle{
-        background-color: aliceblue;
+    .navbar-toggle
+    {
         z-index: 100000;
+
+        background-color: aliceblue;
     }
-    
+
     /*Navbar position*/
-    #navigation{
+    #navigation
+    {
         position: fixed;
+
+        width: 100% !important;
         margin: 0 auto;
         margin-top: -50px;
         margin-left: -15px;
+
+        text-align: center;
+
         border: none;
         background-color: #fff;
-        width:100% !important;
-        text-align: center;
     }
-    
-    
+
+
     /*Nav Text*/
-    .navBtnTop{
-        color: rgb(88, 88, 88);
-        width: 100%;
+    .navBtnTop
+    {
         font-size: 1.2em;
-        text-shadow: none !important;
+
+        width: 100%;
+
         text-align: center;
+
+        color: rgb(88, 88, 88);
+        text-shadow: none !important;
     }
-    
+
     /*Nav Hover Effects */
-    .navBtnTop:hover{
+    .navBtnTop:hover
+    {
         color: #8b8b8a;
-        text-shadow: none;
         border-bottom: none;
+        text-shadow: none;
     }
     /*Nav Active Effects*/
-    .nav .active{
-        color:#495328;
-        text-shadow: none;
+    .nav .active
+    {
+        color: #495328;
         border-bottom: none;
+        text-shadow: none;
     }
-    
+
     /*Header and background*/
-    #top{
-        background: none;
+    #top
+    {
         height: auto;
+
+        background: none;
     }
-    
-    
+
+
     /*Google Maps*/
-    #map{
-        height: 250px;
+    #map
+    {
         width: 250px;
+        height: 250px;
     }
 }

@@ -1,0 +1,15 @@
+$sans-serif-font {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif ;
+
+
+}
+
+
+/*TextFormatting*/
+@mixin textBox {
+
+	font-family: $sans-serif-font;
+	font-size: 1.7em;
+    text-align: center;
+
+}
