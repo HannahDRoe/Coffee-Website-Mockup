@@ -18,7 +18,7 @@
         <link rel="stylesheet" type="text/css" href="custom.css">
         <link rel="stylesheet" type="text/css" href="animate.min.css">
     </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body data-spy="scroll" data-target="#navigation" data-offset="0">
         <header id="top"> 
                   <!--Navigation-->
             <div class="navbar-fixed-top" role="navigation" >
@@ -33,12 +33,12 @@
                     </div> <!-- Toggle Button and nav list Div-->
                
                     <nav id="navigation" class="navbar collapse navbar-collapse" data-spy="affix-top">
-                        <ul class="nav navbar-nav" id="navAcross" class="navBtnTop">
-                            <li><a href="#top" class="hidden-xs" >Home</a></li>
-                            <li><a href="#aboutUs" >About Us</a></li>
-                            <li><a href="#ourPeople">People</a></li>
-                            <li><a href="#menuArea">Menu</a></li>
-                            <li><a href="#contact">Location</a></li>
+                        <ul class="nav navbar-nav" id="navAcross">
+                            <li><a href="#top" class="navBtnTop hidden-xs" >Home</a></li>
+                            <li><a href="#aboutUs" class="navBtnTop" >About Us</a></li>
+                            <li><a href="#ourPeople" class="navBtnTop">People</a></li>
+                            <li><a href="#menuArea" class="navBtnTop">Menu</a></li>
+                            <li><a href="#contact" class="navBtnTop">Location</a></li>
                         </ul>
                     </nav><!--Nav List-->
                    
@@ -49,14 +49,12 @@
         <div id="startChange"></div>
         <!--About Us-->
         <div class="container" id="aboutUs">
-            <div class="row">
-                <section>
-                    <h2>About Us</h2></br>
-                    <p class="col-lg-3 col-lg-push-3 col-md-4 col-md-push-2">  Mazagran java, french press, blue mountain, latte, instant single origin chicory, brewed at, plunger pot, breve acerbic aromatic ut redeye est, carajillo aged et id french press redeye. Cortado, black aftertaste cup caramelization, cappuccino, beans roast plunger pot shop caffeine a in con panna. Wings as brewed beans saucer, cortado cappuccino, beans pumpkin spice coffee froth strong fair trade roast. </p>
-                    <p class="col-lg-3 col-lg-offset-3 col-md-4 col-md-offset-2 hidden-xs">Irish, percolator espresso seasonal brewed beans spoon sugar at in latte a sugar, so shop caffeine a crema. Et, and barista qui iced crema irish, espresso, in, at sweet, dark, organic grounds wings cappuccino whipped iced single shot. Flavour sit whipped sit arabica percolator, cultivar foam, mazagran sweet, mug galão ut arabica and cup redeye robust fair trade. Cup as, whipped id saucer, as, body ut instant rich medium sweet steamed.
-                    </p>
-                </section>
-            </div>
+        <section class="row">
+                <h2>About Us</h2></br>
+                <p class="col-lg-3 col-lg-push-3 col-md-4 col-md-push-2">  Mazagran java, french press, blue mountain, latte, instant single origin chicory, brewed at, plunger pot, breve acerbic aromatic ut redeye est, carajillo aged et id french press redeye. Cortado, black aftertaste cup caramelization, cappuccino, beans roast plunger pot shop caffeine a in con panna. Wings as brewed beans saucer, cortado cappuccino, beans pumpkin spice coffee froth strong fair trade roast. </p>
+                <p class="col-lg-3 col-lg-offset-3 col-md-4 col-md-offset-2 hidden-xs">Irish, percolator espresso seasonal brewed beans spoon sugar at in latte a sugar, so shop caffeine a crema. Et, and barista qui iced crema irish, espresso, in, at sweet, dark, organic grounds wings cappuccino whipped iced single shot. Flavour sit whipped sit arabica percolator, cultivar foam, mazagran sweet, mug galão ut arabica and cup redeye robust fair trade. Cup as, whipped id saucer, as, body ut instant rich medium sweet steamed.
+                </p>
+        </section>
         </div> 
         <!--Carousel-->
         <div class="container-fluid main-container">
