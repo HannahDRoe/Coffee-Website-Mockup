@@ -1,3 +1,5 @@
+
+//Navbar Transition =======================================================
 if($(window).width() >= 668){
     $(document).ready(function(){       
        var scroll_start = 0;
@@ -14,8 +16,9 @@ if($(window).width() >= 668){
        });
         }
     });
+  }
 
-    // Back to top button 
+    // Back to top button ================================================
     var amountScrolled = 2600;
 
     $(window).scroll(function(){
@@ -26,24 +29,12 @@ if($(window).width() >= 668){
         }
     });
     
-     /* Adding the active class to navbar
-     $(document).ready(function(){
-       $('nav ul li').scroll(function(){
-         $('li a').removeClass("active");
-         $(this).addClass("active");
-       });
-     });*/
+
+$('#navbar').scrollspy()
     
-   
- }
 
-    $('body').scrollspy({ target: '#navigation' });
-
-    $('[data-spy="scroll"]').each(function () {
-      var $spy = $(this).scrollspy('refresh')
-    })
-
-//Navbar collapse Hidden when an option is selected
+    
+//Navbar collapse Hidden when an option is selected ======================
     $(document).ready(function(){
         $("#navAcross").click(function(event) {
             $(".navbar-collapse").collapse('hide');
@@ -51,7 +42,7 @@ if($(window).width() >= 668){
 });
         
 
-//Google Maps 
+//Google Maps ============================================================
     function initialize( ) {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {

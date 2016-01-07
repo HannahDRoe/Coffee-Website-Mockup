@@ -1,7 +1,3 @@
-@import 'main.scss';
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
 
 body
 {
@@ -64,7 +60,7 @@ body
     text-shadow: none;
 }
 /*Nav Active Effects*/
-.nav .active
+.nav .current
 {
     color: #fff2bb;
     border-bottom: 2.5px solid #fff2bb;
@@ -89,6 +85,7 @@ body
     margin-top: 20px;
     padding-top: 40px;
     @include textBox;
+    color: $font-color;
 }
 
 /*Our People, beginning of carousel div*/
@@ -121,14 +118,21 @@ body
 {
     width: 100%;
     height: 100%;
-}
-#slideOne
-{
-    background-image: url(images/cafe.jpg);
     background-position: center;
     background-size: cover;
 }
+#slideOne
+{
+    background-image: url(images/8C35014CE3.jpg);
+    
+}
+#slideTwo{
+    background-image: url(images/RKVW9F72PL.jpg);
 
+}
+#slideThree{
+    background-image: url(images/coffeeDate.jpg);
+}
 /*Carousel hover/focus colors*/
 .carousel-control:hover,
 .carousel-control:focus
@@ -362,7 +366,7 @@ footer
     {
         z-index: 100000;
 
-        background-color: aliceblue;
+        background-color: Aliceblue;
     }
 
     /*Navbar position*/
