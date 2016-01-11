@@ -30,7 +30,7 @@ if ($(window).width() >= 668){
         }
     });
     
-
+// Bootstrap Scrollspy ====================================================
 $('#navbar').scrollspy();
     
 
@@ -55,3 +55,8 @@ $('#navbar').scrollspy();
         
     }
     google.maps.event.addDomListener(window, 'load', initialize);
+
+
+//Refresh when resized==========================
+
+$(window).resize(function(){location.reload();});
