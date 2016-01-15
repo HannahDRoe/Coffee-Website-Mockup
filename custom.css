@@ -11,6 +11,8 @@ body
     height: 1200px;
     margin: 0px;
     padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
 }
 
 /*================= Header and background ====================*/
@@ -34,7 +36,7 @@ body
     position: relative;
     z-index: 9999;
 
-    width: 365px;
+    width: 425px;
     margin: 0 auto 0 auto;
 
     text-align: center;
