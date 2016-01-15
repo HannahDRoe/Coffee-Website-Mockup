@@ -21,7 +21,7 @@ body
     z-index: 999;
 
     width: 100%;
-    height: 700px;
+    height: 600px;
 
     background-image: url(images/coffeeCloseUp.jpg);
     background-size: cover;
@@ -111,7 +111,7 @@ body
     font-size: 2em;
 
     position: relative;
-    left: 46.5%;
+    text-align: center;
 
     padding: 0 0 0 20px;
 }
@@ -136,7 +136,7 @@ body
 /*======================================== Where carousel went ===========================================*/
 
 
-/*================= Menu Jumbotron ====================*/
+/*================= Menu ====================*/
 
 #menuArea
 {
@@ -144,7 +144,7 @@ body
 
     width: 100%;
     height: 700px;
-    margin: 10em auto 0 auto;
+    margin: 100px auto 0 auto;
 
     background-image: linear-gradient(
     rgba(0, 0, 0, .5),
@@ -201,6 +201,7 @@ body
     text-align: center;
 
     color: #ed6d3e;
+    
 }
 #contactInfo
 {
@@ -208,26 +209,30 @@ body
 
     height: 200px;
 
-    text-align: center;
     margin: 40px auto 0px auto;
+    text-align: center;
+
+   
     
 }
 #contactHours
 {
     position: relative;
-    float: left;
-    left: 35%;
-     margin: 0 35px  auto 0;
-    padding: 0 -50px 0 0;
+    text-align: center;
+    display: inline-block;
+    margin:  0px 0px;
+    padding:  0px 20px;
+
 }
 
 #contact-sm-p
 {
     position: relative;
-    float: right;
-    right: 35%;
-    margin: 35px auto;
-     padding: 0 20px 0 0;
+    text-align: center;
+    display: inline-block;
+    top:-40px;
+    margin: 0px 0px;
+    padding: 35px 20px;
 }
 /*================= Google Maps ====================*/
 
@@ -257,32 +262,41 @@ body
 
 #socialIcons
 {
-    font-family: monospace;
-    font-size: 1.2em;
 
-    position: relative;
-
-    width: 250px;
+    width: 500px;
     height: 100px;
     margin: 25px auto;
 
     text-align: center;
+
 }
+
+#socialList
+{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
 
 /*================= Social Media Circles ====================*/
 
 .socialCircle
 {
     display: inline-block;
-    float: left;
-
-    width: 40px;
-    height: 40px;
-    margin: 5px 5px 0 10px;
 
     list-style: none;
 
     text-align: center;
+
+    margin: 5px 5px 0 10px;
+}
+.socialCircle img{
+    width: 40px;
+    height: 40px;
+   
 }
 
 /*================= Back to the Top Button ====================*/
@@ -394,6 +408,63 @@ footer
         background: none;
     }
 
+    /*================= Menu ====================*/
+
+    #menuArea
+    {
+        position: relative;
+
+        width: 100%;
+        height: 700px;
+        margin: 0 auto;
+
+        
+    }
+
+    
+    /*================= Find Us ====================*/
+
+    #findUs
+    {
+        width: 100%;
+        height: 800px;
+        margin: 0 auto;
+
+        background-color: #fff2bb;
+    }
+    #contact
+    {
+        font-family: ;
+        font-size: 1.8em;
+        font-weight: bold;
+
+        width: 100%;
+
+        margin: 25px auto;
+
+        text-align: center;
+
+        color: #ed6d3e;
+       
+    }
+    #contactInfo
+    {
+        position: relative;
+
+        height: 300px;
+        display: block;
+       
+        text-align: center;
+
+    }
+   
+    #contact-sm-p
+    {
+        position: relative;
+         display: block;
+        top: 10px;
+        
+    }
     /*================= Google Maps ====================*/
 
     #map
@@ -401,4 +472,7 @@ footer
         width: 250px;
         height: 250px;
     }
+
+    
+
 }
