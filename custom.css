@@ -183,23 +183,25 @@ body
 
 /*================= Offerings ====================*/
 #offerings{
-    height: 400px;
+    height: 300px;
     width: 100%;
     position: relative;
-    margin: 40px 0px 0px 10%;
-
+    margin: 40px 0px 0px 150px;
+   
 }
 .caption
 {
     text-align: center;
     padding: 0;
-    margin: 10px 0;
+    margin: 10px auto;
+    height: 50px;
 }
 .thumbnail
 {
-    height: 300px;
+    position: relative;
+    height: 250px;
     width: 300px;
-    margin: 25px 0px 0px 75px;
+    margin: 0 auto;
     
 }
 
@@ -371,7 +373,7 @@ footer
         height: 350px;
         width: 100%;
         position: relative;
-        margin: 20px 0px 0px 0px;
+        margin: 20px 0px 0px 10px;
 
     }
 }
@@ -468,7 +470,7 @@ footer
     }
     .thumbnail
     {
-        height: 300px;
+        height: 200;
         width: 250px;
         margin: 25px 0px 0px 25px;
         
@@ -486,7 +488,6 @@ footer
     }
     #contact
     {
-        font-family: ;
         font-size: 1.8em;
         font-weight: bold;
 
