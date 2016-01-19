@@ -145,7 +145,7 @@ body
     position: relative;
 
     width: 100%;
-    height: 700px;
+    height: 600px;
     margin: 100px auto 0 auto;
 
     background-image: linear-gradient(
@@ -179,6 +179,28 @@ body
 
     height: 40px;
     margin-top: 20px;
+}
+
+/*================= Offerings ====================*/
+#offerings{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    margin: 40px 0px 0px 10%;
+
+}
+.caption
+{
+    text-align: center;
+    padding: 0;
+    margin: 10px 0;
+}
+.thumbnail
+{
+    height: 300px;
+    width: 300px;
+    margin: 25px 0px 0px 75px;
+    
 }
 
 /*================= Find Us ====================*/
@@ -245,7 +267,7 @@ body
 
     width: 400px;
     height: 400px;
-    margin: 40px auto 0 auto;
+    margin: 60px auto 0 auto;
 
     border: 2px solid #fff;
     border-radius: 2px;
@@ -337,7 +359,22 @@ footer
 
 
 
-/*======================================= Navbar media query ===========================================*/
+/*======================================= Media Queries ===========================================*/
+
+
+
+
+@media only screen and (max-width: 1265px)
+{
+    #offerings
+    {
+        height: 350px;
+        width: 100%;
+        position: relative;
+        margin: 20px 0px 0px 0px;
+
+    }
+}
 
 @media only screen and (max-width: 768px)
 {
@@ -420,10 +457,23 @@ footer
         height: 700px;
         margin: 0 auto;
 
-        
     }
 
-    
+    #offerings
+    {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    margin: 40px 0px 0px -7px;
+    }
+    .thumbnail
+    {
+        height: 300px;
+        width: 250px;
+        margin: 25px 0px 0px 25px;
+        
+    }
+        
     /*================= Find Us ====================*/
 
     #findUs
