@@ -41,6 +41,10 @@ body
 
     text-align: center;
 }
+#navAcross
+{
+    margin-left: 20px;
+}
 
 
 /*================= Collapsse Toggle bar color ====================*/
@@ -366,16 +370,24 @@ footer
 
 
 
-@media only screen and (max-width: 1265px)
+@media only screen and (max-width: 992px)
 {
     #offerings
     {
-        height: 350px;
+        height: 250px;
         width: 100%;
         position: relative;
-        margin: 20px 0px 0px 10px;
+        margin: 20px 0px 20px 10px;
 
     }
+     .thumbnail
+    {
+        height: 200px;
+        width: 200px;
+        margin: 25px 0px 0px 25px;
+        
+    }
+
 }
 
 @media only screen and (max-width: 768px)
