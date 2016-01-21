@@ -1,7 +1,7 @@
 
 
 //Navbar Transition =======================================================
-if ($(window).width() >= 668){
+if ($(window).width() >= 768){
     $(document).ready(function (){       
        var scroll_start = 0;
        var startchange = $('#startChange');
@@ -10,17 +10,17 @@ if ($(window).width() >= 668){
        $(document).scroll(function () { 
           scroll_start = $(this).scrollTop();
           if(scroll_start > offset.top) {
-              $(".navbar-fixed-top").css('background-color', 'rgba(99, 124, 150, 0.99)');
+              $(". ").css('background-color', 'rgba(58,39,22, 0.99)');
            } else {
                $(".navbar-fixed-top").css('background-color', 'transparent');
            }
-       });
+        });
         }
     });
-  }
+  
 
     // Back to top button ================================================
-    var amountScrolled = 2000;
+    var amountScrolled = 1800;
 
     $(window).scroll(function (){
         if ($(window).scrollTop() > amountScrolled) {
@@ -29,6 +29,7 @@ if ($(window).width() >= 668){
             $("#backToTop").fadeOut('slow');
         }
     });
+}
     
 // Bootstrap Scrollspy ====================================================
 $('#navbar').scrollspy();

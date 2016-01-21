@@ -60,7 +60,7 @@ body
 .navBtnTop
 {
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 1em;
 
     position: relative;
 
@@ -68,7 +68,7 @@ body
 
     text-align: center;
 
-    color: #f0e2d2;
+    color: #EECAAA;
     text-shadow: none !important;
 }
 
@@ -78,17 +78,17 @@ body
 
 .navBtnTop:hover
 {
-    color: #fff2bb;
+    color: #FFE3BC;
     background-color: transparent !important;
     text-shadow: none;
 }
 
 /*================= Nav Active Effects ====================*/
 
-.nav .active
+.nav .active .navBtnTop
 {
-    color: #fff2bb;
-    border-bottom: 2.5px solid #fff2bb;
+    color: #FFE3BC;
+    border-bottom: 2.5px solid #FFE3BC;
     text-shadow: none;
 }
 
@@ -350,12 +350,15 @@ body
     position: fixed;
     z-index: 99999;
     top: 75%;
-    float: right;
+    left: 95%;
+
 
     display: none;
 
     width: 50px;
     height: 50px;
+    padding-top: 8px;
+    border-radius: 50px;
 
     text-align: center;
 
@@ -557,5 +560,34 @@ footer
     {
         width: 250px;
         height: 250px;
+    }
+
+    /*================= Social Media Area ====================*/
+
+    #socialIcons
+    {
+        width: 250px;
+        height: 100px;
+        margin: 25px auto;
+
+        text-align: center;
+    }
+
+    #socialList
+    {
+        width: 250px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /*================= Back to the Top Button ====================*/
+    #backToTop{
+        display: none;
+    }
+
+    footer
+    {
+        position: relative;
     }
 }
