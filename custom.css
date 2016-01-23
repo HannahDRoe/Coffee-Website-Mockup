@@ -1,0 +1,599 @@
+/*================== General Page Layout=======================*/
+
+html
+{
+     height: 100%;
+}
+body
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+
+    position: relative;
+
+    height: 1400px;
+    margin: 0;
+    padding: 0;
+}
+
+/*================= Header and background ====================*/
+
+#top
+{
+    position: relative;
+    z-index: 999;
+
+    width: 100%;
+    height: 600px;
+
+    background-image: url(images/coffeeCloseUp.jpg);
+    background-size: cover;
+}
+
+
+/*================= Navbar position ====================*/
+
+#navigation
+{
+    position: relative;
+    z-index: 9999;
+
+    width: 425px;
+    margin: 0 auto 0 auto;
+
+    text-align: center;
+}
+#navAcross
+{
+    margin-left: 20px;
+}
+
+
+/*================= Collapsse Toggle bar color ====================*/
+
+.icon-bar
+{
+    background-color: #383030;
+}
+
+/*================= Nav Text ====================*/
+
+.navBtnTop
+{
+    font-size: 1.2em;
+    font-weight: 1em;
+
+    position: relative;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #FFF0DA;
+    text-shadow: none !important;
+}
+
+
+
+/*================= Nav Hover Effects ====================*/
+
+.navBtnTop:hover
+{
+    color: #D9B481;
+    background-color: transparent !important;
+    text-shadow: none;
+}
+
+/*================= Nav Active Effects ====================*/
+
+.nav .active .navBtnTop
+{
+    color: #D9B481;
+    border-bottom: 2.5px solid #D9B481;
+    text-shadow: none;
+}
+
+/*================= Div for Navbar color change ====================*/
+
+#startChange
+{
+    position: relative;
+
+    height: 30px;
+    margin-top: -50;
+}
+
+/*================= AboutUs ====================*/
+
+#aboutUs
+{
+    position: relative;
+
+    height: 400px;
+    margin-top: 75px;
+    padding-top: 20px;
+}
+
+#headerAboutUs
+{
+    font-size: 2em;
+
+    position: relative;
+
+    padding: 0 0 0 20px;
+
+    text-align: center;
+}
+.p-AboutUs
+{
+    font-size: 1.2em;
+
+    padding-bottom: 10px;
+}
+
+/*================= Our People, beginning of carousel div ====================*/
+
+#ourPeople
+{
+    position: relative;
+
+    height: 550px;
+    margin-top: 10px;
+    padding-top: 50px;
+}
+
+/*======================================== Where carousel went ===========================================*/
+
+
+/*================= Menu ====================*/
+
+#menuArea
+{
+    position: relative;
+
+    width: 100%;
+    height: 600px;
+    margin: 100px auto 0 auto;
+
+    background-image: linear-gradient(
+    rgba(0, 0, 0, .5),
+    rgba(0, 0, 0, .5)),
+    url(images/coffeeSmiley.jpg);
+    background-size: cover;
+}
+
+/*================= Menu Text ====================*/
+
+#menuText
+{
+    font-size: 1.2em;
+
+    position: relative;
+
+    width: 85%;
+    height: 100%;
+    margin: 150px auto 0 auto;
+
+    text-align: center;
+
+    color: white;
+}
+
+#download
+{
+    font-family: sans-serif;
+
+    position: relative;
+
+    height: 40px;
+    margin-top: 20px;
+}
+
+/*================= Offerings ====================*/
+#offeringsContainer
+{
+    position: relative;
+
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+}
+
+#offerings
+{
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.thumbnail
+{
+    position: relative;
+
+    width: 300px;
+    height: 250px;
+    margin: 0 10px 0 10px;
+}
+
+.caption
+{
+    height: 50px;
+    margin: 10px auto;
+    padding: 0;
+
+    text-align: center;
+}
+
+/*================= Find Us ====================*/
+
+#findUs
+{
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+
+    background-color: #7C8891;
+}
+#contact
+{
+    font-size: 1.8em;
+    font-weight: bold;
+
+    width: 100%;
+    margin: 25px auto;
+
+    text-align: center;
+
+}
+#contactInfo
+{
+    position: relative;
+
+    height: 200px;
+    margin: 40px auto 0 auto;
+
+    text-align: center;
+}
+#contactHours
+{
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 0;
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+#contact-sm-p
+{
+    position: relative;
+    top: -40px;
+
+    display: inline-block;
+
+    margin: 0 0;
+    padding: 35px 20px;
+
+    text-align: center;
+}
+/*================= Google Maps ====================*/
+
+#map
+{
+    position: relative;
+
+    width: 400px;
+    height: 400px;
+    margin: 60px auto 0 auto;
+
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+/*================= Follow Us Area ====================*/
+
+#socialContainer
+{
+    position: relative;
+
+    width: 100%;
+}
+
+/*================= Social Media Area ====================*/
+
+#socialIcons
+{
+    width: 500px;
+    height: 100px;
+    margin: 25px auto;
+
+    text-align: center;
+}
+
+#socialList
+{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+/*================= Social Media Circles ====================*/
+
+.socialCircle
+{
+    display: inline-block;
+
+    margin: 5px 5px 0 10px;
+
+    list-style: none;
+
+    text-align: center;
+}
+.socialCircle img
+{
+    width: 40px;
+    height: 40px;
+}
+
+/*================= Back to the Top Button ====================*/
+
+#backToTop
+{
+    font-size: 30px;
+
+    position: fixed;
+    z-index: 99999;
+    top: 75%;
+    left: 95%;
+
+
+    display: none;
+
+    width: 50px;
+    height: 50px;
+    padding-top: 8px;
+    border-radius: 50px;
+
+    text-align: center;
+
+    color: #FFE3BC;
+    background-color: #383428;
+}
+
+/*================= Footer ====================*/
+footer
+{
+    width: 100%
+    height: 200px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    background-color: #7C8891;
+
+}
+
+
+
+
+/*======================================= Media Queries ===========================================*/
+
+
+
+@media only screen and (max-width: 1000px)
+{
+    #offeringsContainer
+    {
+        position: relative;
+
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+    }
+
+    #offerings
+    {
+        width: 700px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    .thumbnail
+    {
+        width: 200px;
+        height: 200px;
+        margin: 25px 0 0 25px;
+    }
+}
+
+
+@media only screen and (max-width: 768px)
+{
+    body
+    {
+        padding: 0;
+    }
+    .navbar-toggle
+    {
+        z-index: 100000;
+
+        background-color: Aliceblue;
+    }
+
+    /*================= Navbar position ====================*/
+
+    #navigation
+    {
+        position: fixed;
+
+        width: 100% !important;
+        margin: 0 auto;
+        margin-top: -50px;
+        margin-left: -15px;
+
+        text-align: center;
+
+        border: none;
+        background-color: #fff;
+    }
+
+    /*================= Nav Text ====================*/
+
+    .navBtnTop
+    {
+        font-size: 1.2em;
+
+        width: 100%;
+
+        text-align: center;
+
+        color: rgb(88, 88, 88);
+        text-shadow: none !important;
+    }
+
+    /*================= Nav Hover Effects ====================*/
+
+    .navBtnTop:hover
+    {
+        color: #8b8b8a;
+        border-bottom: none;
+        text-shadow: none;
+    }
+
+    /*================= Nav Active Effects ====================*/
+
+    .nav .active
+    {
+        color: #495328;
+        border-bottom: none;
+        text-shadow: none;
+    }
+
+    /*================= Header and background ====================*/
+
+    #top
+    {
+        height: auto;
+
+        background: none;
+    }
+
+    /*================= Menu ====================*/
+
+    #menuArea
+    {
+        position: relative;
+
+        width: 100%;
+        height: 700px;
+        margin: 0 auto;
+    }
+
+    #offeringsContainer
+    {
+        position: relative;
+
+        display: inline-block;
+
+        width: 100%;
+        height: 700px;
+        margin: 0 auto;
+    }
+
+    #offerings
+    {
+        width: 200px;
+        height: 600px;
+        margin: 0 auto;
+    }
+    .thumbnail
+    {
+        width: 200px;
+        height: 200px;
+        margin: 5px 0 0 5px;
+    }
+    /*================= Find Us ====================*/
+
+    #findUs
+    {
+        width: 100%;
+        height: 800px;
+        margin: 0 auto;
+
+        background-color: #7C8891;
+    }
+    #contact
+    {
+        font-size: 1.8em;
+        font-weight: bold;
+
+        width: 100%;
+        margin: 25px auto;
+
+        text-align: center;
+
+        
+    }
+    #contactInfo
+    {
+        position: relative;
+
+        display: block;
+
+        height: 300px;
+
+        text-align: center;
+    }
+
+    #contact-sm-p
+    {
+        position: relative;
+        top: 10px;
+
+        display: block;
+    }
+    /*================= Google Maps ====================*/
+
+    #map
+    {
+        width: 250px;
+        height: 250px;
+    }
+
+    /*================= Social Media Area ====================*/
+
+    #socialIcons
+    {
+        width: 250px;
+        height: 100px;
+        margin: 25px auto;
+
+        text-align: center;
+    }
+
+    #socialList
+    {
+        width: 250px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /*================= Back to the Top Button ====================*/
+    #backToTop{
+        display: none;
+    }
+
+    footer
+    {
+        height: 100px;
+        position: relative;
+        padding: 0px;
+    }
+}
